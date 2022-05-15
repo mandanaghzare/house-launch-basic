@@ -1,0 +1,99 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  height: 100%;
+  width: 100%;
+}
+header .backCover {
+  background-color: rgba(245, 233, 128, 0.31);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+header .headerContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .headerContent .logo {
+  width: 25%;
+}
+header .headerContent .search {
+  display: flex;
+  width: 100%;
+}
+header .headerContent .search button {
+  padding: 20px 20px 10px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #f8fafc;
+  font-size: 34px;
+  border-radius: 22px 0px 0px 22px;
+}
+header .headerContent .search input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0px 22px 22px 0px;
+  padding-right: 5%;
+  font-size: 22px;
+  outline: none;
+  color: #f8fafc;
+}
+header .headerContent .search input::placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f8fafc;
+}
+header .headerContent .headerItems {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+header .headerContent .headerItems a {
+  padding: 15px;
+  text-align: center;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px -14px rgb(0, 0, 0);
+}
+
+.leaflet-container {
+  width: 100wh;
+  height: 100vh;
+  position: relative;
+}
+
+#map {
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */
