@@ -1,13 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.css';
 import { AiOutlineSearch } from "react-icons/ai";
+import SimpleMap from './MapAmlak';
+import NavigateButton from './navigateButton';
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 
 const Header = (props) => {
+    const [isActive, setActive] = useState('false')
+    const goBot = () => {
+        setActive(!isActive);
+    }
     return ( 
         <div>
-            <header>
-                <img src={require('../../Img/GoogleMapTA.jpg')} />
+            <header className={!isActive ? "goBot" : null}>
+                <SimpleMap />
                 <div className="backCover"></div>
                 <div className="headerContent">
                     <div className="logo">
@@ -22,6 +29,9 @@ const Header = (props) => {
                         <a href="">درج آگهی</a>
                         <a href="">خرید رهن اجاره</a>
                     </div>
+                </div>                
+                <div className="navigateButton" onClick={goBot}>
+                    <BsFillArrowUpCircleFill />
                 </div>
             </header>
         </div>

@@ -1,15 +1,15 @@
 import React, {useState, useRef} from 'react';
-import NeshanMap from 'react-neshan-map-leaflet';
+import NeshanMap from './src/NeshanMap';
 
 const SimpleMap = () => {
-  return (
-    <NeshanMap
-      options={{
-        key: 'service.gfFdceFjHrFPlr29pU75W7guPa7nkmM5ZVgLGj47',
-        center: [35.699739, 51.338097],
-        zoom: 13
-      }}
-    />
+  return (            
+      <NeshanMap
+        options={{
+          key: 'web.OiIxeNdmM6fWRfBug71LYiXYyNcc7G5UWkLAe6Zk',
+          center: [35.699739, 51.338097],
+          zoom: 13
+        }}
+      />
   );
 }
 
