@@ -3,14 +3,17 @@ import './style.css';
 import { AiOutlineSearch } from "react-icons/ai";
 import SimpleMap from './MapAmlak';
 import NavigateButton from './navigateButton';
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { FcAdvertising } from "react-icons/fc";
+import { MdAdminPanelSettings } from "react-icons/md";
+import { BiBuildingHouse } from "react-icons/bi";
 
 
 const Header = (props) => {
-    const [isActive, setActive] = useState('false')
-    const goBot = () => {
-        setActive(!isActive);
-    }
+  const [isActive, setActive] = useState('false')
+  const goBot = () => {
+      setActive(!isActive);
+      console.log(isActive)
+  }
     return ( 
         <div>
             <header className={!isActive ? "goBot" : null}>
@@ -25,14 +28,21 @@ const Header = (props) => {
                         <button><AiOutlineSearch /></button>
                     </div>
                     <div className="headerItems">
-                        <a href="">پنل مدیریت</a>
-                        <a href="">درج آگهی</a>
-                        <a href="">خرید رهن اجاره</a>
+                        <a href="">
+                            <p>پنل مدیریت</p>
+                            <span><MdAdminPanelSettings /></span>
+                        </a>
+                        <a href="">
+                            <p>درج آگهی</p>
+                            <span id="_header_items_adv"><FcAdvertising /></span>
+                        </a>
+                        <a href="">
+                            <p>خرید رهن اجاره</p>
+                            <span id="_header_items_adv"><BiBuildingHouse /></span>
+                        </a>
                     </div>
-                </div>                
-                <div className="navigateButton" onClick={goBot}>
-                    <BsFillArrowUpCircleFill />
                 </div>
+                <NavigateButton data={goBot} />
             </header>
         </div>
      );

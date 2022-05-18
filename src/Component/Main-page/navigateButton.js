@@ -1,9 +1,11 @@
-import React from 'react'
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
+import React, { useState } from 'react'
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
-function NavigateButton() {
+function NavigateButton(props) {
   return (
-      <></>
+      <button className="navigateButton" onClick={props.data}>
+        <BsFillArrowUpCircleFill />
+      </button>
   )
 }
 

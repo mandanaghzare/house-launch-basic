@@ -36,7 +36,7 @@ const NeshanMap = (props) => {
       },
     });
   },[]);
-  return <div ref={mapEl} style={{ ...defaultStyle, ...style }} />;
+  return <div className="_main_map" ref={mapEl} style={{ ...defaultStyle, ...style }} />;
 };
 
 export default NeshanMap;
