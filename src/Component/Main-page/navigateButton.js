@@ -3,7 +3,7 @@ import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 function NavigateButton(props) {
   return (
-      <button className="navigateButton" onClick={props.data}>
+      <button type='button' className="navigateButton" onClick={props.data}>
         <BsFillArrowUpCircleFill />
       </button>
   )
