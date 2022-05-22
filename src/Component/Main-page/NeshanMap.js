@@ -14,15 +14,15 @@ L.Icon.Default.mergeOptions({
 });
 
 
-const form = document.querySelector('form');
-const input = form.querySelector('input[type="text"]');
+// const form = document.querySelector('form');
+// const input = form.querySelector('input[type="text"]');
 
-form.addEventListener('submit', async (event) => {
-  event.preventDefault();
+// form.addEventListener('submit', async (event) => {
+//   event.preventDefault();
 
-  const results = await provider.search({ query: input.value });
-  console.log(results); // » [{}, {}, {}, ...]
-});
+//   const results = await provider.search({ query: input.value });
+//   console.log(results); // » [{}, {}, {}, ...]
+// });
 
 
 function NeshanMap() {

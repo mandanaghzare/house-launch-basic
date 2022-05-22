@@ -1685,6 +1685,18 @@
     "@svgr/plugin-svgo" "^5.5.0"
     "loader-utils" "^2.0.0"
 
+"@terraformer/arcgis@^2.1.0":
+  "integrity" "sha512-eKTvNXze2Fo7vAEjvJFIGn5QdU0OP4aD9DuT/uTBLRM1QS+ju7KtPITbVW+xgCviHLnOVeFQ1UsIs9kjkakD4g=="
+  "resolved" "https://registry.npmjs.org/@terraformer/arcgis/-/arcgis-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "@terraformer/common" "^2.0.7"
+
+"@terraformer/common@^2.0.7":
+  "integrity" "sha512-8bl+/JT0Rw6FYe2H3FfJS8uQwgzGl+UHs+8JX0TQLHgA4sMDEwObbMwo0iP3FVONwPXrPHEpC5YH7Grve0cl9A=="
+  "resolved" "https://registry.npmjs.org/@terraformer/common/-/common-2.0.7.tgz"
+  "version" "2.0.7"
+
 "@testing-library/dom@^8.5.0", "@testing-library/dom@>=7.21.4":
   "integrity" "sha512-9VHgfIatKNXQNaZTtLnalIy0jNZzY35a4S3oi08YAt9Hv1VsfZ/DfA45lM8D/UhtHBGJ4/lGwp0PZkVndRkoOQ=="
   "resolved" "https://registry.npmjs.org/@testing-library/dom/-/dom-8.13.0.tgz"
@@ -4599,6 +4611,22 @@
   "version" "4.3.0"
   dependencies:
     "estraverse" "^5.2.0"
+
+"esri-leaflet-geocoder@^3.1.3":
+  "integrity" "sha512-XuorBaPKOq2XBswyWS3fX4I0EyGamdQsao/NQbn+9wlCZtpDrpIn2iKLY7x4uOaPC4wCjE/rskli8UMCVwlZrg=="
+  "resolved" "https://registry.npmjs.org/esri-leaflet-geocoder/-/esri-leaflet-geocoder-3.1.3.tgz"
+  "version" "3.1.3"
+  dependencies:
+    "esri-leaflet" "^3.0.2"
+    "leaflet" "^1.0.0"
+
+"esri-leaflet@^3.0.2":
+  "integrity" "sha512-mLb4pRfDAbkG1YhuajD22erLXIAtrF1R32hmgmlJNI3t47n6KjTppCb8lViia0O7+GDORXFuJ9Lj9RkpsaKhSA=="
+  "resolved" "https://registry.npmjs.org/esri-leaflet/-/esri-leaflet-3.0.8.tgz"
+  "version" "3.0.8"
+  dependencies:
+    "@terraformer/arcgis" "^2.1.0"
+    "tiny-binary-search" "^1.0.3"
 
 "estraverse@^4.1.1":
   "integrity" "sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw=="
@@ -9744,6 +9772,11 @@
   "integrity" "sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA=="
   "resolved" "https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz"
   "version" "1.1.0"
+
+"tiny-binary-search@^1.0.3":
+  "integrity" "sha512-STSHX/L5nI9WTLv6wrzJbAPbO7OIISX83KFBh2GVbX1Uz/vgZOU/ANn/8iV6t35yMTpoPzzO+3OQid3mifE0CA=="
+  "resolved" "https://registry.npmjs.org/tiny-binary-search/-/tiny-binary-search-1.0.3.tgz"
+  "version" "1.0.3"
 
 "tmpl@1.0.5":
   "integrity" "sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw=="
