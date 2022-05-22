@@ -1,0 +1,176 @@
+[
+  {
+      "id": 2215,
+      "locationId": "dangjinsupercharger",
+      "name": "میدان آزادی",
+      "status": "OPEN",
+      "address": {
+          "street": "충남 당진시 송악읍 송악로 63",
+          "city": "당진",
+          "state": "48",
+          "zip": null,
+          "countryId": 137,
+          "country": "South Korea",
+          "regionId": 102,
+          "region": "Asia Pacific"
+      },
+      "gps": {
+          "latitude": 35.699722,
+          "longitude": 51.337222
+      },
+      "dateOpened": "2019-12-20",
+      "stallCount": 6,
+      "counted": true,
+      "elevationMeters": 42,
+      "powerKilowatt": 120,
+      "solarCanopy": false,
+      "battery": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+  },
+  {
+      "id": 2216,
+      "locationId": "seoulgangseosupercharger",
+      "name": "پارک سعیدی",
+      "status": "OPEN",
+      "address": {
+          "street": "서울특별시 강서구 하늘길 38",
+          "city": "서울",
+          "state": null,
+          "zip": null,
+          "countryId": 137,
+          "country": "South Korea",
+          "regionId": 102,
+          "region": "Asia Pacific"
+      },
+      "gps": {
+          "latitude": 35.689832,
+          "longitude": 51.337232
+      },
+      "dateOpened": "2019-12-20",
+      "stallCount": 4,
+      "counted": true,
+      "elevationMeters": 13,
+      "powerKilowatt": 120,
+      "solarCanopy": false,
+      "battery": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+  },
+  {
+      "id": 110,
+      "locationId": "buelltonsupercharger",
+      "name": "لشگری",
+      "status": "OPEN",
+      "address": {
+          "street": "555 McMurray Rd",
+          "city": "Buellton",
+          "state": "CA",
+          "zip": "93427",
+          "countryId": 100,
+          "country": "USA",
+          "regionId": 100,
+          "region": "North America"
+      },
+      "gps": {
+          "latitude": 35.699722,
+          "longitude": 51.317222
+      },
+      "dateOpened": "2013-07-13",
+      "stallCount": 10,
+      "counted": true,
+      "elevationMeters": 114,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+  },
+  {
+      "id": 111,
+      "locationId": "corningsupercharger",
+      "name": "باغ انگور",
+      "status": "OPEN",
+      "address": {
+          "street": "950 Hwy 99",
+          "city": "Corning",
+          "state": "CA",
+          "zip": "96021",
+          "countryId": 100,
+          "country": "USA",
+          "regionId": 100,
+          "region": "North America"
+      },
+      "gps": {
+          "latitude": 35.659722,
+          "longitude": 51.317222
+      },
+      "dateOpened": "2013-10-18",
+      "stallCount": 6,
+      "counted": true,
+      "elevationMeters": 87,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+  },
+  {
+      "id": 109,
+      "locationId": "barstowcasupercharger",
+      "name": "گذر گاه سعیدی",
+      "status": "OPEN",
+      "address": {
+          "street": "2812 Lenwood Rd",
+          "city": "Barstow",
+          "state": "CA",
+          "zip": "92311",
+          "countryId": 100,
+          "country": "USA",
+          "regionId": 100,
+          "region": "North America"
+      },
+      "gps": {
+          "latitude": 35.619722,
+          "longitude": 51.325222
+      },
+      "dateOpened": "2012-11-19",
+      "stallCount": 16,
+      "counted": true,
+      "elevationMeters": 725,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": true,
+      "statusDays": 0,
+      "urlDiscuss": true
+  },
+  {
+      "id": 142,
+      "locationId": "tiftonsupercharger",
+      "name": "ابراهیم اصفهانی",
+      "status": "OPEN",
+      "address": {
+          "street": "1310 U.S. 82",
+          "city": "Tifton",
+          "state": "GA",
+          "zip": "31794",
+          "countryId": 100,
+          "country": "USA",
+          "regionId": 100,
+          "region": "North America"
+      },
+      "gps": {
+          "latitude": 35.669722,
+          "longitude": 51.327222
+      },
+      "dateOpened": "2014-07-10",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 92,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+  }
+]
