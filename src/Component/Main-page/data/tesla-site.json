@@ -172,5 +172,34 @@
       "battery": false,
       "statusDays": 0,
       "urlDiscuss": true
+  },
+  {
+      "id": 143,
+      "locationId": "tiftonsupercharger",
+      "name": "زمین فوتبال",
+      "status": "OPEN",
+      "address": {
+          "street": "1310 U.S. 82",
+          "city": "Tifton",
+          "state": "GA",
+          "zip": "31794",
+          "countryId": 100,
+          "country": "USA",
+          "regionId": 100,
+          "region": "North America"
+      },
+      "gps": {
+          "latitude": 35.661122,
+          "longitude": 51.327222
+      },
+      "dateOpened": "2014-07-10",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 92,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": false,
+      "statusDays": 0,
+      "urlDiscuss": true
   }
 ]
