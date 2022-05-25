@@ -21,7 +21,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var SearchControl = function SearchControl(props) {
   var map = (0, _reactLeaflet.useMap)();
-  console.log();
   (0, _react.useEffect)(function () {
     var searchControl = new _leafletGeosearch.GeoSearchControl(_objectSpread({
       provider: props.provider

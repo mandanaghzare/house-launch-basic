@@ -5,14 +5,13 @@ import "./react-leaflet-geosearch.css";
 
 const SearchControl = (props) => {
   const map = useMap();
-  console.log()
 
   useEffect(() => {
     const searchControl = new GeoSearchControl({
       provider: props.provider,
       ...props
     });
-    
+
     map.addControl(searchControl);
     return () => map.removeControl(searchControl);
   }, [map, props]);
