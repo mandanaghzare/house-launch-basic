@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Popup, useMap, Marker } from 'react-leaflet';
+import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
 
 import 'leaflet/dist/leaflet.css';
 import './leaflet/geosearch.css';
@@ -17,17 +17,6 @@ L.Icon.Default.mergeOptions({
   iconUrl: require('../../Img/marker-icon.png'),
   shadowUrl: require('../../Img/marker-shadow.png')
 });
-
-
-// const form = document.querySelector('form');
-// const input = form.querySelector('input[type="text"]');
-
-// form.addEventListener('submit', async (event) => {
-//   event.preventDefault();
-
-//   const results = await provider.search({ query: input.value });
-//   console.log(results); // » [{}, {}, {}, ...]
-// });
 
 
 function NeshanMap() {
@@ -52,14 +41,11 @@ function NeshanMap() {
           maxMarkers={2}
           retainZoomLevel={true}
           animateZoom={true}
+          showMarker={false}
           autoClose={true}
           closeResultsOnClick={true}
-          searchLabel={"جسنجوس موقعیت مکانی"}
+          searchLabel={"جستجوس موقعیت مکانی"}
           keepResult={false}
-            searchBounds= {[
-              new LatLng(33.100745405144245, 46.48315429687501),
-              new LatLng(44.55916341529184, 24.510498046875)
-            ]}
         />
       </MapContainer>
 

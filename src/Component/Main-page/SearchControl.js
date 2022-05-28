@@ -9,9 +9,9 @@ const SearchControl = (props) => {
   useEffect(() => {
     const searchControl = new GeoSearchControl({
       provider: props.provider,
-      ...props
+      ...props,
     });
-
+    console.log(props)
     map.addControl(searchControl);
     return () => map.removeControl(searchControl);
   }, [map, props]);

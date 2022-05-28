@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './style.css';
-import { AiOutlineSearch } from "react-icons/ai";
-import SimpleMap from './MapAmlak';
+import NeshanMap from './NeshanMap';
 import NavigateButton from './navigateButton';
 import { FcAdvertising } from "react-icons/fc";
 import { MdAdminPanelSettings } from "react-icons/md";
@@ -17,15 +16,11 @@ const Header = (props) => {
     return ( 
         <div>
             <header className={!isActive ? "goBot" : null}>
-                <SimpleMap />
+                <NeshanMap/>
                 <div className="backCover"></div>
                 <div className="headerContent">
                     <div className="logo">
                         <img src={require('../../Img/logo.png')} alt="logo" />
-                    </div>
-                    <div className="search">
-                        <input type="search" placeholder='جستجوی موقعیت مکانی' />
-                        <button><AiOutlineSearch /></button>
                     </div>
                     <div className="headerItems">
                         <a href="">

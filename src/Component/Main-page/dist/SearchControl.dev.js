@@ -25,6 +25,7 @@ var SearchControl = function SearchControl(props) {
     var searchControl = new _leafletGeosearch.GeoSearchControl(_objectSpread({
       provider: props.provider
     }, props));
+    console.log(props);
     map.addControl(searchControl);
     return function () {
       return map.removeControl(searchControl);
