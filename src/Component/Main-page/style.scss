@@ -15,6 +15,10 @@ a{
 button{
     cursor: pointer;
 }
+.leaflet-marker-pane, .leaflet-shadow-pane{
+    opacity: 0;
+    transition: 1s;
+}
 header{
     height: 100vh;
     position: relative;
@@ -108,6 +112,9 @@ header{
         .leaflet-control-geosearch{
             top: 1%;
         }
+        .leaflet-marker-pane, .leaflet-shadow-pane{
+            opacity: 1;
+        }
         .headerItems{
             transform: translateX(470%) translateY(-110%);
             flex-direction: column;
@@ -157,10 +164,10 @@ header{
     .leaflet-control-geosearch{
         position: fixed;
         height: 6%;
-        top: 50%;
         border: none!important;
         left: 25%;
         display: flex;
+        top: 50%;
         width: 50%;
         transition: 1s ease all;
         margin: 0px;
@@ -192,6 +199,7 @@ header{
             .results{
                 width: 97%;
                 left: 0px;
+                position: absolute;
             }
         }
         a{

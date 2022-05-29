@@ -18,6 +18,11 @@ button {
   cursor: pointer;
 }
 
+.leaflet-marker-pane, .leaflet-shadow-pane {
+  opacity: 0;
+  transition: 1s;
+}
+
 header {
   height: 100vh;
   position: relative;
@@ -108,6 +113,9 @@ header.goBot .logo {
 header.goBot .leaflet-control-geosearch {
   top: 1%;
 }
+header.goBot .leaflet-marker-pane, header.goBot .leaflet-shadow-pane {
+  opacity: 1;
+}
 header.goBot .headerItems {
   transform: translateX(470%) translateY(-110%);
   flex-direction: column;
@@ -157,10 +165,10 @@ header.goBot ._main_map {
 .leaflet-container .leaflet-control-geosearch {
   position: fixed;
   height: 6%;
-  top: 50%;
   border: none !important;
   left: 25%;
   display: flex;
+  top: 50%;
   width: 50%;
   transition: 1s ease all;
   margin: 0px;
@@ -194,6 +202,7 @@ header.goBot ._main_map {
 .leaflet-container .leaflet-control-geosearch form .results {
   width: 97%;
   left: 0px;
+  position: absolute;
 }
 .leaflet-container .leaflet-control-geosearch a {
   position: relative;
