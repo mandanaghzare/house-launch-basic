@@ -12,11 +12,10 @@ const Header = (props) => {
     const goBot = () => {
         setActive(!isActive);
     }
-
-
+    
     return (
         <header className={!isActive ? "goBot" : null}>
-            <NeshanMap/>
+            <NeshanMap activate={isActive} setActivate={setActive} resultClick={goBot}/>
             <div className="backCover"></div>
             <div className="headerContent">
                 <div className="logo">
@@ -37,7 +36,7 @@ const Header = (props) => {
                     </a>
                 </div>
             </div>
-            <NavigateButton data={goBot} />
+            <NavigateButton onClick={goBot} />
         </header>
      );
 }

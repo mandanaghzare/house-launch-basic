@@ -19,8 +19,9 @@ L.Icon.Default.mergeOptions({
 });
 
 
-function NeshanMap() {
+function NeshanMap(props) {
   const prov = OpenStreetMapProvider();
+
   return (
     <div className="">
       <MapContainer center={[35.699722, 51.337222]} zoom={13} scrollWheelZoom={true}>
@@ -36,6 +37,9 @@ function NeshanMap() {
         ))}
 
       <SearchControl
+          activate={props.activate}
+          resultClick={props.resultClick}
+          setActivate={props.setActivate}
           provider={prov}
           popupFormat={({ query, result }) => result.label}
           maxMarkers={2}

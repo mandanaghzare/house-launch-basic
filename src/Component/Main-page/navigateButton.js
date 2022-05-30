@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
-function NavigateButton(props) {
+function NavigateButton({onClick}) {
   return (
-      <button type='button' className="navigateButton" onClick={props.data}>
+      <button type='button' className="navigateButton" onClick={onClick}>
         <BsFillArrowUpCircleFill />
       </button>
   )
