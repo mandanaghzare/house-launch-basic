@@ -1,4 +1,8 @@
 $white: #f8fafc;
+$purple: #625076;
+$green: #9db08b;
+$text: #1e293b;
+$greenOpacity: #9db18c80;
 *{
     padding: 0px;
     margin: 0px;
@@ -30,7 +34,7 @@ header{
         width: 100%;
     }
     .backCover{
-        background-color: rgba(245, 233, 128, .31);
+        background-color: $greenOpacity;
         width: 100%;
         height: 100%;
         position: absolute;

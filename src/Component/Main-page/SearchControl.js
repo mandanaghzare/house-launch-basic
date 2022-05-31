@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { useMap } from "react-leaflet";
 import { GeoSearchControl} from "leaflet-geosearch";
 import "./react-leaflet-geosearch.css";
+import { useDispatch } from "react-redux";
+import { deActive } from "../../redux/activateSlice";
 
 const SearchControl = (props) => {
+  const dispatch = useDispatch()
   const map = useMap();
   
   useEffect(() => {
@@ -15,12 +18,8 @@ const SearchControl = (props) => {
     map.addControl(searchControl);
     let searchResult = searchControl.resultList.elements.container;
     searchResult.addEventListener('click', function(){
-      props.resultClick(
-          props.setActivate(props.activate)
-          )
+      dispatch(deActive())
     })
-    
-    console.log(props.setActivate);
     return () => map.removeControl(searchControl);
   }, [map, props]);
   return null;

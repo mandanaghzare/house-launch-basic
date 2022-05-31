@@ -1,21 +1,31 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './style.css';
 import NeshanMap from './NeshanMap';
 import NavigateButton from './navigateButton';
 import { FcAdvertising } from "react-icons/fc";
 import { MdAdminPanelSettings } from "react-icons/md";
 import { BiBuildingHouse } from "react-icons/bi";
+import { active, deActive } from '../../redux/activateSlice';
 
 
 const Header = (props) => {
-    const [isActive, setActive] = useState('false')
+    const state = useSelector((state) => state.activate.value)
+    const dispatch = useDispatch()
+
     const goBot = () => {
-        setActive(!isActive);
+        if(state == true){
+            console.log('true')
+            dispatch(deActive())
+        }else{
+            console.log('false')
+            dispatch(active())
+        }
     }
     
     return (
-        <header className={!isActive ? "goBot" : null}>
-            <NeshanMap activate={isActive} setActivate={setActive} resultClick={goBot}/>
+        <header className={!state ? "goBot" : null}>
+            <NeshanMap/>
             <div className="backCover"></div>
             <div className="headerContent">
                 <div className="logo">
