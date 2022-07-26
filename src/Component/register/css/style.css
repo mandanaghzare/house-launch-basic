@@ -1,0 +1,100 @@
+.register, .signIn {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register .tabs, .signIn .tabs {
+  width: 30%;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #707070;
+  position: relative;
+}
+.register .tabs button, .signIn .tabs button {
+  width: 50%;
+  font-size: 2em;
+  color: #625076;
+  padding: 1.5rem 0;
+}
+.register .tabs span, .signIn .tabs span {
+  width: 50%;
+  height: 3px;
+  background-color: #625076;
+  position: absolute;
+  bottom: -2px;
+  transition: 0.3s ease all;
+}
+.register form, .signIn form {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register form ._field, .signIn form ._field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.register form ._field input, .signIn form ._field input {
+  text-align: right;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border: 1px solid #a9a1b1;
+  border-radius: 0.4em;
+  background-color: transparent;
+}
+.register form ._field input:-internal-autofill-selected, .signIn form ._field input:-internal-autofill-selected {
+  background-color: transparent;
+}
+.register form ._field input::-moz-placeholder, .signIn form ._field input::-moz-placeholder {
+  color: transparent;
+}
+.register form ._field input:-ms-input-placeholder, .signIn form ._field input:-ms-input-placeholder {
+  color: transparent;
+}
+.register form ._field input::placeholder, .signIn form ._field input::placeholder {
+  color: transparent;
+}
+.register form ._field input:-moz-placeholder-shown ~ label, .signIn form ._field input:-moz-placeholder-shown ~ label {
+  transform: translateY(0px);
+}
+.register form ._field input:-ms-input-placeholder ~ label, .signIn form ._field input:-ms-input-placeholder ~ label {
+  transform: translateY(0px);
+}
+.register form ._field input:placeholder-shown ~ label, .signIn form ._field input:placeholder-shown ~ label {
+  transform: translateY(0px);
+}
+.register form ._field input:-webkit-autofill:focus, .register form ._field input:-webkit-autofill, .signIn form ._field input:-webkit-autofill:focus, .signIn form ._field input:-webkit-autofill {
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.register form ._field input:focus, .register form ._field input:focus-visible, .signIn form ._field input:focus, .signIn form ._field input:focus-visible {
+  outline: none;
+}
+.register form ._field input:focus ~ label, .register form ._field input:focus-visible ~ label, .signIn form ._field input:focus ~ label, .signIn form ._field input:focus-visible ~ label {
+  transform: translateY(-25px);
+}
+.register form ._field label, .signIn form ._field label {
+  position: absolute;
+  right: 0.5rem;
+  font-size: 0.8em;
+  transform: translateY(-25px);
+  cursor: text;
+  background-color: #fafaf9;
+  padding: 0 1rem;
+  transition: 0.1s ease transform;
+}
+.register form button, .signIn form button {
+  background-color: #4B5563;
+  padding: 0.7rem 3rem;
+  border-radius: 4px;
+  font-size: 1.2em;
+  color: #fafaf9;
+  margin: 0 0.5rem;
+}
+.register form button:hover, .signIn form button:hover {
+  background-color: #454e5c;
+}/*# sourceMappingURL=style.css.map */

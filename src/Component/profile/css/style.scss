@@ -1,0 +1,80 @@
+.profile{
+    .tablist{
+        .name{
+            p{
+                color: #000;
+            }
+        }
+        ul{
+            li{
+                color: #000;
+            }
+        }
+    }
+    .tabContent{
+        .panel{
+            form{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                ._field{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 2rem;
+                    width: 100%;
+                    input{
+                        text-align: right;
+                        padding: .8rem 1rem;
+                        width: 100%;
+                        border: 1px solid #a9a1b1;
+                        border-radius: .4em;
+                        background-color: transparent;
+                        &:-internal-autofill-selected {
+                            background-color: transparent;
+                        }
+                        &::placeholder{
+                            color: transparent;
+                        }
+                        &:placeholder-shown{
+                            &~label{
+                                transform: translateY(0px);
+                            }
+                        }
+                        &:-webkit-autofill:focus, &:-webkit-autofill {
+                            transition: background-color 600000s 0s, color 600000s 0s;
+                        }
+                        &:focus, &:focus-visible{
+                            outline: none;
+                            &~label{
+                                transform: translateY(-25px);
+                            }
+                        }
+                    }
+                    label{
+                        position: absolute;
+                        right: .5rem;
+                        font-size: .8em;
+                        transform: translateY(-25px);
+                        cursor: text;
+                        background-color: #fafaf9;
+                        padding: 0 1rem;
+                        transition: .1s ease transform;
+                    }
+                }
+                button{
+                    background-color: #4B5563;
+                    padding: 0.7rem 3rem;
+                    border-radius: 4px;
+                    font-size: 1.2em;
+                    color: #fafaf9;
+                    margin: 0 .5rem;
+                    &:hover{
+                        background-color: #454e5c;
+                    }
+                }
+            }
+        }
+    }
+}

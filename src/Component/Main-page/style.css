@@ -196,6 +196,12 @@ header.goBot ._main_map {
   outline: none;
   color: #f8fafc;
 }
+.leaflet-container .leaflet-control-geosearch form input::-moz-placeholder {
+  color: rgb(223, 223, 223) !important;
+}
+.leaflet-container .leaflet-control-geosearch form input:-ms-input-placeholder {
+  color: rgb(223, 223, 223) !important;
+}
 .leaflet-container .leaflet-control-geosearch form input::placeholder {
   color: rgb(223, 223, 223) !important;
 }
@@ -242,6 +248,4 @@ a[href="https://neshan.org"] {
 
 a[href="https://openstreetmap.org"] {
   display: none;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
