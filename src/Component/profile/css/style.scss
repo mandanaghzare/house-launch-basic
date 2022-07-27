@@ -1,20 +1,82 @@
 .profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10%;
+    width: 100%;
     .tablist{
+        width: 29%;
+        box-shadow: 0px 0px 20px -10px;
+        border-radius: 8px;
+        position: sticky;
+        top: 10px;
         .name{
+            background-color: #52525b;
+            display: flex;
+            border-radius: 8px 8px 0px 0px;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            padding: 2.5rem;
+            font-weight: 500;
+            position: sticky;
             p{
-                color: #000;
+                color: #d4d4d8;
             }
         }
         ul{
+            border: none;
+            margin-bottom: 0;
+            overflow: hidden;
             li{
                 color: #000;
+                width: 100%;
+                padding: 2rem;
+                bottom: unset;
+                position: unset;
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                transition: .3s ease all;
+                border: none;
+                &::after{
+                    background-color: transparent;
+                }
+                &:hover{                    
+                    background: #efefef;
+                }
+                span{
+                    bottom: 2px;
+                    position: relative;
+                    padding: 0 .5rem 0 1rem;
+                }
+                .leftArrow{
+                    display: none;
+                }
+                &.react-tabs__tab--selected{
+                    background: #efefef;
+                    border-color: unset;
+                    border: none;
+                    border-radius: unset;
+                    .leftArrow{
+                        display: block;
+                    }
+                }
             }
         }
     }
     .tabContent{
+        width: 69%;
+        box-shadow: 0px 0px 20px -10px;
+        border-radius: 8px;
+        padding: 3rem;
+        padding-bottom: 1rem;
         .panel{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
             form{
-                width: 25%;
+                width: 30%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -48,7 +110,8 @@
                         &:focus, &:focus-visible{
                             outline: none;
                             &~label{
-                                transform: translateY(-25px);
+                                transform: translateY(-28px);
+                                font-size: .6em;
                             }
                         }
                     }
@@ -63,18 +126,24 @@
                         transition: .1s ease transform;
                     }
                 }
-                button{
-                    background-color: #4B5563;
-                    padding: 0.7rem 3rem;
-                    border-radius: 4px;
-                    font-size: 1.2em;
-                    color: #fafaf9;
-                    margin: 0 .5rem;
-                    &:hover{
-                        background-color: #454e5c;
-                    }
+            }
+            button{
+                background-color: #4B5563;
+                padding: 0.5rem 3rem;
+                border-radius: 4px;
+                font-size: 1em;
+                color: #fafaf9;
+                margin: 0 .5rem;
+                margin-bottom: 2rem;
+                &:hover{
+                    background-color: #454e5c;
                 }
             }
+        }
+        .advertising, .favorite{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
     }
 }

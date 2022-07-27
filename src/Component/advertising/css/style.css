@@ -1,0 +1,51 @@
+.advertising {
+  padding: 3rem;
+}
+.advertising #gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.advertising #gallery #_one_big_img {
+  width: 74%;
+}
+.advertising #gallery #_one_big_img img {
+  width: 100%;
+}
+.advertising #gallery #_one_big_img .buttons {
+  width: 5%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.advertising #gallery #_one_big_img .buttons button {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 2rem;
+  transition: 0.3s ease all;
+}
+.advertising #gallery #_one_big_img .buttons button:first-child {
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 0.3rem;
+}
+.advertising #gallery #_one_big_img .buttons button:last-child {
+  border-radius: 0 0 1rem 1rem;
+}
+.advertising #gallery #_one_big_img .buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.advertising #gallery #_two_small_img {
+  width: 24%;
+  position: relative;
+}
+.advertising #gallery #_two_small_img img {
+  width: 100%;
+}
+.advertising #gallery #_two_small_img .imgSlide {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}/*# sourceMappingURL=style.css.map */

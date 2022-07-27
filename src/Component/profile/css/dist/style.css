@@ -1,11 +1,85 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10%;
+  width: 100%;
+}
+.profile .tablist {
+  width: 29%;
+  box-shadow: 0px 0px 20px -10px;
+  border-radius: 8px;
+  position: sticky;
+  top: 10px;
+}
+.profile .tablist .name {
+  background-color: #52525b;
+  display: flex;
+  border-radius: 8px 8px 0px 0px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  padding: 2.5rem;
+  font-weight: 500;
+  position: sticky;
+}
 .profile .tablist .name p {
-  color: #000;
+  color: #d4d4d8;
+}
+.profile .tablist ul {
+  border: none;
+  margin-bottom: 0;
+  overflow: hidden;
 }
 .profile .tablist ul li {
   color: #000;
+  width: 100%;
+  padding: 2rem;
+  bottom: unset;
+  position: unset;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  transition: 0.3s ease all;
+  border: none;
+}
+.profile .tablist ul li::after {
+  background-color: transparent;
+}
+.profile .tablist ul li:hover {
+  background: #efefef;
+}
+.profile .tablist ul li span {
+  bottom: 2px;
+  position: relative;
+  padding: 0 0.5rem 0 1rem;
+}
+.profile .tablist ul li .leftArrow {
+  display: none;
+}
+.profile .tablist ul li.react-tabs__tab--selected {
+  background: #efefef;
+  border-color: unset;
+  border: none;
+  border-radius: unset;
+}
+.profile .tablist ul li.react-tabs__tab--selected .leftArrow {
+  display: block;
+}
+.profile .tabContent {
+  width: 69%;
+  box-shadow: 0px 0px 20px -10px;
+  border-radius: 8px;
+  padding: 3rem;
+  padding-bottom: 1rem;
+}
+.profile .tabContent .panel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .profile .tabContent .panel form {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +115,8 @@
   outline: none;
 }
 .profile .tabContent .panel form ._field input:focus ~ label, .profile .tabContent .panel form ._field input:focus-visible ~ label {
-  transform: translateY(-25px);
+  transform: translateY(-28px);
+  font-size: 0.6em;
 }
 .profile .tabContent .panel form ._field label {
   position: absolute;
@@ -53,14 +128,20 @@
   padding: 0 1rem;
   transition: 0.1s ease transform;
 }
-.profile .tabContent .panel form button {
+.profile .tabContent .panel button {
   background-color: #4B5563;
-  padding: 0.7rem 3rem;
+  padding: 0.5rem 3rem;
   border-radius: 4px;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #fafaf9;
   margin: 0 0.5rem;
+  margin-bottom: 2rem;
 }
-.profile .tabContent .panel form button:hover {
+.profile .tabContent .panel button:hover {
   background-color: #454e5c;
+}
+.profile .tabContent .advertising, .profile .tabContent .favorite {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

@@ -1,0 +1,70 @@
+.advItem {
+  width: 48%;
+  box-shadow: 0px 0px 20px -10px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+.advItem #_image {
+  width: 100%;
+  position: relative;
+}
+.advItem #_image img {
+  width: 100%;
+}
+.advItem #_image #_gallery {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 2em;
+}
+.advItem #_details {
+  padding: 1.5rem 2rem;
+}
+.advItem #_details ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.advItem #_details ul li {
+  width: 50%;
+  padding-top: 0.5rem;
+}
+.advItem #_details ul li p {
+  margin-bottom: 0;
+}
+.advItem #_details ul li p.text-left {
+  text-align: left;
+}
+.advItem #_details ul li p.address {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.advItem #_details #__sub_details li p {
+  font-size: 13px;
+}
+.advItem #_back {
+  display: flex;
+  opacity: 0;
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 50px;
+  transition: 0.3s ease all;
+}
+.advItem:hover #_back {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}

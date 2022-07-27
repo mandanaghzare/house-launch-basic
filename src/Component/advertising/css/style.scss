@@ -1,0 +1,57 @@
+.advertising{
+    padding: 3rem;
+    #gallery{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        #_one_big_img{
+            width: 74%;
+            img{
+                width: 100%;
+            }
+            .buttons{
+                width: 5%;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                display: flex;
+                flex-direction: column;
+                button{
+                    background-color: rgba(0,0,0,.3);
+                    width: 100%;
+                    height: 2rem;
+                    transition: .3s ease all;
+                    &:first-child{
+                        border-radius: 1rem 1rem 0 0;
+                        margin-bottom: .3rem;
+                    }
+                    &:last-child{
+                        border-radius: 0 0 1rem 1rem;
+                    }
+                    &:hover{
+                        background-color: rgba(0,0,0,.5);
+                    }
+                }
+            }
+
+        }
+        #_two_small_img{
+            width: 24%;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .imgSlide{
+                position: absolute;
+                bottom: 1rem;
+                left: 1rem;
+            }
+        }
+    }
+    #_details{
+        #__main_details{
+
+        }
+    }
+}

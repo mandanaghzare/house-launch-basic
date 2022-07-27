@@ -3,54 +3,47 @@ import Menu from '../../generally/menu/js/Menu';
 import { MdOutlineAdminPanelSettings, MdOutlineExitToApp } from 'react-icons/md';
 import { SiHomeadvisor } from 'react-icons/si';
 import { AiOutlineHeart } from 'react-icons/ai';
+import { BsArrowLeft } from 'react-icons/bs'
 import '../css/style.css'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import Panel from './Panel';
+import AdvItem from '../../generally/advItem/js/AdvItem';
 
 function Profile() {
   return (
     <>
         <Menu />
-        <div className="profile">
+        <Tabs className="profile">
             <div className="tablist">
                 <div className="name">
                     <p>ماندانا زارع</p>
                 </div>
-                <ul className="unstyled-list">
-                    <li><MdOutlineAdminPanelSettings /> <span>پنل مدیریت</span></li>
-                    <li><SiHomeadvisor /> <span>اگهی ها</span></li>
-                    <li><AiOutlineHeart /> <span>علاقمندی های</span></li>
-                    <li><MdOutlineExitToApp /> <span>خروج</span></li>
-                </ul>
+                <TabList>
+                    <Tab><MdOutlineAdminPanelSettings /> <span>پنل مدیریت</span><BsArrowLeft className="leftArrow" /></Tab>
+                    <Tab><SiHomeadvisor /> <span>اگهی ها</span><BsArrowLeft className="leftArrow" /></Tab>
+                    <Tab><AiOutlineHeart /> <span>علاقمندی های</span><BsArrowLeft className="leftArrow" /></Tab>
+                    <li><MdOutlineExitToApp /> <span>خروج</span><BsArrowLeft className="leftArrow" /></li>
+                </TabList>
             </div>
             <div className="tabContent">
-                <div className="panel">                    
-                    <form action="">
-                        <div className="_field">
-                            <input type="text" id="name" placeholder='placeholder' />
-                            <label htmlFor="name">نام کاربری</label>
-                        </div>
-                        <div className="_field">
-                            <input type="email" id="email" placeholder='placeholder' />
-                            <label htmlFor="email">ایمیل</label>
-                        </div>
-                        <div className="_field">
-                            <input type="text" id="phone" placeholder='placeholder' />
-                            <label htmlFor="phone">شماره تماس</label>
-                        </div>
-                        <div className="_field">
-                            <input type="password" id="pass" placeholder='placeholder' />
-                            <label htmlFor="pass">پسورد</label>
-                        </div>
-                        <div className="_field">
-                            <input type="text" id="code" placeholder='placeholder' />
-                            <label htmlFor="code">کد اتحادیه</label>
-                        </div>
-                        <div className="submit">
-                            <button>ذخیره تغییرات</button>
-                        </div>
-                    </form>
-                </div>
+            <TabPanel className="panel">
+                <Panel />
+            </TabPanel>
+            <TabPanel className="advertising">
+                <AdvItem />
+                <AdvItem />
+                <AdvItem />
+                <AdvItem />
+            </TabPanel>
+            <TabPanel className="favorite">
+                <AdvItem />
+                <AdvItem />
+                <AdvItem />
+                <AdvItem />
+            </TabPanel>
             </div>
-        </div>
+        </Tabs>
     </>
   )
 }

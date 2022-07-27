@@ -5,12 +5,12 @@ import Menu from '../../generally/menu/js/Menu';
 import '../css/style.css'
 
 function Register() {
-    const[moveSpan,setMoveSpan] = useState("-200%");
+    const[moveSpan,setMoveSpan] = useState("200%");
     const person = () => {
-        setMoveSpan('-200%')
+        setMoveSpan('200%')
     }
     const realState = () => {
-        setMoveSpan('-100%')
+        setMoveSpan('100%')
     }
   return (
     <>
@@ -38,7 +38,7 @@ function Register() {
                         <input type="password" id="pass" placeholder='placeholder' />
                         <label htmlFor="pass">پسورد</label>
                     </div>
-                {moveSpan=="-200%" ? '' :
+                {moveSpan=="200%" ? '' :
                     <div className="_field">
                         <input type="text" id="code" placeholder='placeholder' />
                         <label htmlFor="code">کد اتحادیه</label>
