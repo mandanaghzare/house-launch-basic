@@ -1,6 +1,11 @@
 import React from 'react';
 import { BsFillSuitHeartFill, BsImage, BsShareFill } from 'react-icons/bs';
-import '../css/style.css'
+import AdvItem from '../../generally/advItem/js/AdvItem';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from "swiper";
+import 'swiper/css';
+import "swiper/css/navigation";
+import '../css/style.css';
 
 function Advertising() {
   return (
@@ -10,67 +15,162 @@ function Advertising() {
                 <div className="buttons">
                     <button><BsFillSuitHeartFill /></button>
                     <button><BsShareFill /></button>
+                </div>                
+                <div className="imgSlide">
+                    <BsImage /><span>20</span>
                 </div>
                 <img src={require('../../../Img/Interior-Designers-1.jpg')} alt="" />
             </div>
             <div id="_two_small_img">
-                <img src={require('../../../Img/download.jpg')} alt="" />
-                <img src={require('../../../Img/unit-design.jpg')} alt="" />
-                <div className="imgSlide">
-                    <BsImage /><span>20</span>
+                <div id="_smallimg">
+                    <img src={require('../../../Img/download.jpg')} alt="" />
+                </div>
+                <div id="_smallimg">
+                    <img src={require('../../../Img/unit-design.jpg')} alt="" />
                 </div>
             </div>
         </div>
-        <div id="_details">
-            <ul id="__main_details" className="list-unstyled">
-                <li>
-                    <p>فروش</p>
-                </li>
-                <li>
-                    <p class="text-left">دو روز قبل</p>
-                </li>
-                <li>
-                    <p class="address">البرز- کرج- گوهردشت- خیابان چهاردهم- ساختمان</p>
-                </li>
-                <li>
-                    <p class="text-left">200،000،000 تومان</p>
-                </li>
-            </ul>
-            <ul id="__sub_details" className="list-unstyled">
-                <li>
-                    <p>آپارتمان</p>
-                </li>
-                <li>
-                    <p>طبقه دوم</p>
-                </li>
-                <li>
-                    <p>املاک الوان</p>
-                </li>
-                <li>
-                    <p>انباری</p>
-                </li>
-                <li>
-                    <p>آسانسور</p>
-                </li>
-                <li>
-                    <p>گاز رو کابینتی</p>
-                </li>
-                <li>
-                    <p>سنددار</p>
-                </li>
-                <li>
-                    <p>پارکینگ</p>
-                </li>
-                <li>
-                    <p>پارکت</p>
-                </li>
-                <li>
-                    <p>پکیج</p>
-                </li>
-                <li>
-                    <p>تراس</p>
-                </li>
-            </ul>
+        <div id="_file_content">
+            <div id="_details">
+                <ul id="__main_details" className="list-unstyled">
+                    <li>
+                        <p className="address">البرز- کرج- گوهردشت- خیابان چهاردهم- ساختمان</p>
+                    </li>
+                    <li>
+                        <p className="text-left">200،000،000 تومان</p>
+                    </li>
+                    <li>
+                        <p className="text-left">دو روز قبل</p>
+                    </li>
+                    <li>
+                        <p>فروش</p>
+                    </li>
+                </ul>
+                <ul id="__sub_details" className="list-unstyled">
+                    <li>
+                        <p>آپارتمان</p>
+                    </li>
+                    <li>
+                        <p>طبقه دوم</p>
+                    </li>
+                    <li>
+                        <p>املاک الوان</p>
+                    </li>
+                    <li>
+                        <p>انباری</p>
+                    </li>
+                    <li>
+                        <p>آسانسور</p>
+                    </li>
+                    <li>
+                        <p>گاز رو کابینتی</p>
+                    </li>
+                    <li>
+                        <p>سنددار</p>
+                    </li>
+                    <li>
+                        <p>پارکینگ</p>
+                    </li>
+                    <li>
+                        <p>پارکت</p>
+                    </li>
+                    <li>
+                        <p>پکیج</p>
+                    </li>
+                    <li>
+                        <p>تراس</p>
+                    </li>
+                </ul>
+                <div id="_map_pin">
+                    <h6>آدرس روی نقشه</h6>
+                    <div id="_img">
+                        <img src={require('../../../Img/Image 1.png')} alt="" />
+                    </div>
+                </div>
+                <div id="_explain">
+                    <h6>توضیحات</h6>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                </div>
+                <div id="_price_history">
+                    <h6>تاریخچه قیمت در منطقه رستاخیز گوهردشت</h6>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>تاریخ</th>
+                                <th>قیمت (تومان)</th>
+                                <th>منبع</th>
+                                <th>مرحله</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>21/3/1401</td>
+                                <td>1،800،000،000</td>
+                                <td>املاک شید پویان</td>
+                                <td>فروش</td>
+                            </tr>
+                            <tr>
+                                <td>21/3/1401</td>
+                                <td>1،800،000،000</td>
+                                <td>املاک شید پویان</td>
+                                <td>فروش</td>
+                            </tr>
+                            <tr>
+                                <td>21/3/1401</td>
+                                <td>1،800،000،000</td>
+                                <td>املاک شید پویان</td>
+                                <td>فروش</td>
+                            </tr>
+                            <tr>
+                                <td>21/3/1401</td>
+                                <td>1،800،000،000</td>
+                                <td>املاک شید پویان</td>
+                                <td>فروش</td>
+                            </tr>
+                            <tr>
+                                <td>21/3/1401</td>
+                                <td>1،800،000،000</td>
+                                <td>املاک شید پویان</td>
+                                <td>فروش</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div id="_similar_files">
+            <h6>خانه های مشابهی که ممکن است دوست داشته باشید</h6>
+            <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            navigation={true}
+            modules={[Navigation]}>
+                <SwiperSlide>
+                    <AdvItem />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <AdvItem />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <AdvItem />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <AdvItem />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <AdvItem />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <AdvItem />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <AdvItem />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <AdvItem />
+                </SwiperSlide>
+            </Swiper>
         </div>
     </div>
   )

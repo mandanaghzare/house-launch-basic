@@ -1,14 +1,21 @@
 .advertising{
-    padding: 3rem;
+    padding: 5rem;
     #gallery{
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+        height: 80vh;
         #_one_big_img{
-            width: 74%;
+            width: 75%;
+            position: relative;
+            margin-left: 10px;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 0 1em 1em 0;
             img{
-                width: 100%;
+                min-width: 100%;
+                min-height: 100%;
             }
             .buttons{
                 width: 5%;
@@ -34,24 +41,135 @@
                     }
                 }
             }
-
-        }
-        #_two_small_img{
-            width: 24%;
-            position: relative;
-            img{
-                width: 100%;
-            }
             .imgSlide{
                 position: absolute;
+                background-color: rgba(0,0,0,.5);
                 bottom: 1rem;
-                left: 1rem;
+                right: 1rem;
+                color: #fafaf9;
+                display: flex;
+                align-items: center;
+                transition: .3s ease all;
+                cursor: pointer;
+                font-size: 1.2em;
+                padding: 1rem;
+                span{
+                    margin-right: 5px;
+                }
+                &:hover{
+                    background-color: rgba(0,0,0,.8);
+                }
+            }
+        }
+        #_two_small_img{
+            width: 25%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 1em 0 0 1em;
+            overflow: hidden;
+            #_smallimg{
+                height: 50%;
+                overflow: hidden;
+                &:first-child{
+                    margin-bottom: 10px;
+                }
+                img{
+                    min-width: 100%;
+                    min-height: 100%;
+                }
             }
         }
     }
     #_details{
+        padding: 2rem 1rem;
+        width: 75%;
         #__main_details{
-
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                width: 50%;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                &:nth-child(even){
+                    text-align: left;
+                }
+            }
+        }
+        #__sub_details{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            li{
+                width: 25%;
+                margin-bottom: .5rem;
+            }
+        }
+        #_map_pin{
+            margin-top: 10rem;
+            img{
+                width: 100%;
+            }
+        }
+        #_explain{
+            margin-top: 7rem;
+            padding-right: 1rem;
+            border-right: 1px solid #707070;
+        }
+        #_price_history{
+            margin-top: 7rem;
+            table{
+                width: 100%;
+                margin-top: 1rem;
+                background-color: #f5f5f4;
+                tr{
+                    border: 1px solid #AFAFAF;
+                    color: #484848;
+                    th{
+                        background-color: #E5E5E5;
+                        padding: 1rem;
+                    }
+                    td{
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    #_similar_files{
+        margin-top: 5rem;
+        .swiper-wrapper{
+            .swiper-slide{
+                .advItem{
+                    width: 100%;
+                    #_details{
+                        width: 100%;
+                        #__sub_details{
+                            li{
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button-prev{
+            right: 0;
+        }
+        .swiper-button-next{
+            left: 0;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            background-color: rgba(0,0,0,.7);
+            padding: 1.5rem;
+            border-radius: 50%;
+            color: #f5f5f4;
+            &::after{
+                font-size: 1em;
+            }
         }
     }
 }

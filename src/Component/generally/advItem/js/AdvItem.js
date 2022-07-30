@@ -19,13 +19,13 @@ function AdvItem() {
                     <p>فروش</p>
                 </li>
                 <li>
-                    <p class="text-left">دو روز قبل</p>
+                    <p className="text-left">دو روز قبل</p>
                 </li>
                 <li>
-                    <p class="address">البرز- کرج- گوهردشت- خیابان چهاردهم- ساختمان</p>
+                    <p className="address">البرز- کرج- گوهردشت- خیابان چهاردهم- ساختمان</p>
                 </li>
                 <li>
-                    <p class="text-left">200،000،000 تومان</p>
+                    <p className="text-left">200،000،000 تومان</p>
                 </li>
             </ul>
             <ul id="__sub_details" className="list-unstyled">
