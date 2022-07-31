@@ -84,61 +84,161 @@
   min-width: 100%;
   min-height: 100%;
 }
-.advertising #_details {
-  padding: 2rem 1rem;
-  width: 75%;
+.advertising .react-time-picker__inputGroup__input {
+  outline: none;
 }
-.advertising #_details #__main_details {
+.advertising #_file_content {
+  display: flex;
+  padding: 2rem 1rem;
+}
+.advertising #_file_content #_details {
+  width: 75%;
+  padding-left: 1rem;
+}
+.advertising #_file_content #_details #__main_details {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.advertising #_details #__main_details li {
+.advertising #_file_content #_details #__main_details li {
   width: 50%;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.advertising #_details #__main_details li:nth-child(even) {
+.advertising #_file_content #_details #__main_details li:nth-child(even) {
   text-align: left;
 }
-.advertising #_details #__sub_details {
+.advertising #_file_content #_details #__sub_details {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.advertising #_details #__sub_details li {
+.advertising #_file_content #_details #__sub_details li {
   width: 25%;
   margin-bottom: 0.5rem;
 }
-.advertising #_details #_map_pin {
+.advertising #_file_content #_details #_map_pin {
   margin-top: 10rem;
 }
-.advertising #_details #_map_pin img {
+.advertising #_file_content #_details #_map_pin img {
   width: 100%;
 }
-.advertising #_details #_explain {
+.advertising #_file_content #_details #_explain {
   margin-top: 7rem;
   padding-right: 1rem;
   border-right: 1px solid #707070;
 }
-.advertising #_details #_price_history {
+.advertising #_file_content #_details #_price_history {
   margin-top: 7rem;
 }
-.advertising #_details #_price_history table {
+.advertising #_file_content #_details #_price_history table {
   width: 100%;
   margin-top: 1rem;
   background-color: #f5f5f4;
 }
-.advertising #_details #_price_history table tr {
+.advertising #_file_content #_details #_price_history table tr {
   border: 1px solid #AFAFAF;
   color: #484848;
 }
-.advertising #_details #_price_history table tr th {
+.advertising #_file_content #_details #_price_history table tr th {
   background-color: #E5E5E5;
   padding: 1rem;
 }
-.advertising #_details #_price_history table tr td {
+.advertising #_file_content #_details #_price_history table tr td {
   padding: 1rem;
+}
+.advertising #_file_content #_assignation {
+  padding-right: 1rem;
+  width: 25%;
+}
+.advertising #_file_content #_assignation .react-tabs__tab-list {
+  margin-bottom: 0;
+}
+.advertising #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab {
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+}
+.advertising #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab::after {
+  display: none;
+}
+.advertising #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
+  border: 2px solid #a7a7a7;
+  border-bottom: none;
+  background-color: #fafaf9;
+}
+.advertising #_file_content #_assignation .dateInput, .advertising #_file_content #_assignation .timeInput, .advertising #_file_content #_assignation .phoneNum {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+.advertising #_file_content #_assignation .dateInput .DatePicker, .advertising #_file_content #_assignation .dateInput .react-time-picker, .advertising #_file_content #_assignation .timeInput .DatePicker, .advertising #_file_content #_assignation .timeInput .react-time-picker, .advertising #_file_content #_assignation .phoneNum .DatePicker, .advertising #_file_content #_assignation .phoneNum .react-time-picker {
+  width: 60%;
+}
+.advertising #_file_content #_assignation .dateInput .DatePicker__input, .advertising #_file_content #_assignation .timeInput .DatePicker__input, .advertising #_file_content #_assignation .phoneNum .DatePicker__input {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.advertising #_file_content #_assignation .dateInput .react-time-picker__wrapper, .advertising #_file_content #_assignation .timeInput .react-time-picker__wrapper, .advertising #_file_content #_assignation .phoneNum .react-time-picker__wrapper {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+.advertising #_file_content #_assignation .dateInput .react-time-picker__wrapper, .advertising #_file_content #_assignation .timeInput .react-time-picker__wrapper, .advertising #_file_content #_assignation .phoneNum .react-time-picker__wrapper {
+  direction: ltr;
+}
+.advertising #_file_content #_assignation .dateInput p, .advertising #_file_content #_assignation .timeInput p, .advertising #_file_content #_assignation .phoneNum p {
+  margin-left: 0.5rem;
+  margin-bottom: 0;
+}
+.advertising #_file_content #_assignation .phoneNum input {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  width: 60%;
+  text-align: left;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  font-size: 0.9em;
+}
+.advertising #_file_content #_assignation .react-time-picker__clock-button {
+  display: none;
+}
+.advertising #_file_content #_assignation .react-tabs__tab-panel {
+  padding: 1rem;
+  border: 2px solid #a7a7a7;
+  border-top: none;
+}
+.advertising #_file_content #_assignation .submit {
+  color: #DFDFDF;
+  background-color: #8F0000;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 1em;
+}
+.advertising #_file_content #_assignation .description {
+  margin-top: 1rem;
+  font-size: 0.8em;
+  text-align: justify;
+}
+.advertising #_file_content #_assignation form {
+  display: flex;
+  flex-direction: column;
+}
+.advertising #_file_content #_assignation form input, .advertising #_file_content #_assignation form textarea {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  width: 100%;
+  text-align: left;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9em;
+  resize: none;
+}
+.advertising #_file_content #_assignation form textarea {
+  text-align: right;
 }
 .advertising #_similar_files {
   margin-top: 5rem;

@@ -83,58 +83,160 @@
             }
         }
     }
-    #_details{
+    .react-time-picker__inputGroup__input{
+        outline: none;
+    }
+    #_file_content{
+        display: flex;
         padding: 2rem 1rem;
-        width: 75%;
-        #__main_details{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            li{
-                width: 50%;
-                font-weight: bold;
-                margin-bottom: 1rem;
-                &:nth-child(even){
-                    text-align: left;
+        #_details{
+            width: 75%;
+            padding-left: 1rem;
+            #__main_details{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li{
+                    width: 50%;
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                    &:nth-child(even){
+                        text-align: left;
+                    }
+                }
+            }
+            #__sub_details{
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                li{
+                    width: 25%;
+                    margin-bottom: .5rem;
+                }
+            }
+            #_map_pin{
+                margin-top: 10rem;
+                img{
+                    width: 100%;
+                }
+            }
+            #_explain{
+                margin-top: 7rem;
+                padding-right: 1rem;
+                border-right: 1px solid #707070;
+            }
+            #_price_history{
+                margin-top: 7rem;
+                table{
+                    width: 100%;
+                    margin-top: 1rem;
+                    background-color: #f5f5f4;
+                    tr{
+                        border: 1px solid #AFAFAF;
+                        color: #484848;
+                        th{
+                            background-color: #E5E5E5;
+                            padding: 1rem;
+                        }
+                        td{
+                            padding: 1rem;
+                        }
+                    }
                 }
             }
         }
-        #__sub_details{
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            li{
-                width: 25%;
-                margin-bottom: .5rem;
-            }
-        }
-        #_map_pin{
-            margin-top: 10rem;
-            img{
-                width: 100%;
-            }
-        }
-        #_explain{
-            margin-top: 7rem;
+        #_assignation{
             padding-right: 1rem;
-            border-right: 1px solid #707070;
-        }
-        #_price_history{
-            margin-top: 7rem;
-            table{
+            width: 25%;
+            .react-tabs__tab-list{
+                margin-bottom: 0;
+                .react-tabs__tab{
+                    width: 50%;
+                    padding: 1rem;
+                    text-align: center;
+                    &::after{
+                        display: none;
+                    }
+                    &.react-tabs__tab--selected{
+                        border: 2px solid #a7a7a7;
+                        border-bottom: none;
+                        background-color: #fafaf9;
+                    }
+                }
+            }
+            .dateInput, .timeInput, .phoneNum{
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                justify-content: space-between;
+                .DatePicker, .react-time-picker{
+                    width: 60%;
+                }
+                .DatePicker__input{
+                    width: 100%;
+                    border-radius: 0.5rem;
+                }
+                .react-time-picker__wrapper{
+                    background-color: #ffffff;
+                    border: 1px solid #ddd;
+                    border-radius: 0.5rem;
+                }
+                .react-time-picker__wrapper{
+                    direction: ltr;
+                }
+                p{
+                    margin-left: .5rem;
+                    margin-bottom: 0;
+                }
+            }
+            .phoneNum{
+                input{                        
+                    background-color: #ffffff;
+                    border: 1px solid #ddd;
+                    width: 60%;
+                    text-align: left;
+                    padding: .2rem;
+                    border-radius: 0.5rem;
+                    font-size: .9em;
+                }
+            }
+            .react-time-picker__clock-button{
+                display: none;
+            }
+            .react-tabs__tab-panel{
+                padding: 1rem;
+                border: 2px solid #a7a7a7;
+                border-top: none;
+            }
+            .submit{
+                color: #DFDFDF;
+                background-color: #8F0000;
+                padding: .5rem;
                 width: 100%;
+                border-radius: .5rem;
+                font-size: 1em;
+            }
+            .description{
                 margin-top: 1rem;
-                background-color: #f5f5f4;
-                tr{
-                    border: 1px solid #AFAFAF;
-                    color: #484848;
-                    th{
-                        background-color: #E5E5E5;
-                        padding: 1rem;
-                    }
-                    td{
-                        padding: 1rem;
-                    }
+                font-size: .8em;
+                text-align: justify;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                input, textarea{
+                    background-color: #ffffff;
+                    border: 1px solid #ddd;
+                    width: 100%;
+                    text-align: left;
+                    padding: .3rem;
+                    border-radius: 0.5rem;
+                    margin-bottom: .5rem;
+                    font-size: .9em;
+                    resize: none;
+                }
+                textarea{
+                    text-align: right;
                 }
             }
         }
