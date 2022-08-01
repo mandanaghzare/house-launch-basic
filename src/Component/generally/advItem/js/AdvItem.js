@@ -6,9 +6,6 @@ import { GiClick } from 'react-icons/gi';
 function AdvItem() {
   return (
     <div className="advItem">
-        <div id="_back">
-            <GiClick />
-        </div>
         <div id="_image">
             <img src={require('../../../../Img/Interior-Designers.jpg')} alt="" />
             <div id="_gallery"><GrGallery /></div>

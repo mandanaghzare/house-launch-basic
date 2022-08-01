@@ -81,12 +81,15 @@ header .headerContent .headerItems a {
 header .headerContent .headerItems a span {
   font-size: 30px;
   left: 15px;
-  top: 17%;
+  top: 5%;
   position: absolute;
   visibility: hidden;
 }
 header .headerContent .headerItems a #_header_items_adv g, header .headerContent .headerItems a #_header_items_adv path {
   fill: #551a8b;
+}
+header .headerContent .headerItems a p {
+  margin-bottom: 0;
 }
 header .navigateButton {
   position: absolute;
@@ -125,7 +128,7 @@ header.goBot .headerItems {
 }
 header.goBot .headerItems a {
   transform: translateX(-30%);
-  right: 0px;
+  right: 30px;
   width: 100%;
 }
 header.goBot .headerItems a span {

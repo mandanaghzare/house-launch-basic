@@ -78,7 +78,7 @@ header{
                 span{
                     font-size: 30px;
                     left: 15px;
-                    top: 17%;
+                    top: 5%;
                     position: absolute;
                     visibility: hidden;
                 }
@@ -86,6 +86,9 @@ header{
                     g, path{
                         fill: #551a8b;
                     }
+                }
+                p{
+                    margin-bottom: 0;
                 }
             }
         }
@@ -127,7 +130,7 @@ header{
             width: 25%;
             a{
                 transform : translateX(-30%);
-                right: 0px;
+                right: 30px;
                 width: 100%;
                 span{
                     visibility: visible;

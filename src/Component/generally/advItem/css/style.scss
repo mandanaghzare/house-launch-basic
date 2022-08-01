@@ -51,26 +51,4 @@
             }
         }
     }
-    #_back{
-        display: flex;
-        opacity: 0;
-        width: 0%;
-        height: 0%;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        background-color: rgba(0,0,0,.8);
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 50px;
-        transition: .3s ease all;
-    }
-    &:hover{
-        #_back{
-            opacity: 1;
-            height: 100%;
-            width: 100%;
-        }
-    }
 }
