@@ -15,10 +15,8 @@ const Header = (props) => {
 
     const goBot = () => {
         if(state == true){
-            console.log('true')
             dispatch(deActive())
         }else{
-            console.log('false')
             dispatch(active())
         }
     }

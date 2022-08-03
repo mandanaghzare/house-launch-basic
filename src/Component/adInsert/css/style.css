@@ -1,0 +1,49 @@
+.adInsert #_adInsert_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 6rem;
+}
+.adInsert #_adInsert_content #_top_info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.adInsert #_adInsert_content #_top_info select {
+  width: 45%;
+  padding: 0.7rem 0.5rem;
+  text-align: right;
+}
+.adInsert #_adInsert_content #_top_info select button {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  color: #1c1917;
+  display: flex;
+  border: 1px solid #625076;
+  align-items: center;
+}
+.adInsert #_adInsert_content #_top_info select button::after {
+  position: absolute;
+  left: 0.5rem;
+}
+.adInsert #_adInsert_content #_top_info select:focus {
+  border-color: #625076;
+  box-shadow: none;
+}
+.adInsert #_adInsert_content #_top_info select option {
+  width: 100%;
+  max-height: 20rem;
+  overflow: auto;
+}
+.adInsert #_adInsert_content #_top_info select option .dropdown-item {
+  padding: 0.6rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.adInsert #_adInsert_content #_top_info select option .dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}/*# sourceMappingURL=style.css.map */

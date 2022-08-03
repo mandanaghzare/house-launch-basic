@@ -1,0 +1,51 @@
+.adInsert{
+    #_adInsert_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 6rem;
+        #_top_info{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            select{
+                width: 45%;
+                    padding: .7rem .5rem;
+                    text-align: right;
+                button{
+                    width: 100%;
+                    outline: none;
+                    background-color: transparent;
+                    color: #1c1917;
+                    display: flex;
+                    border: 1px solid #625076;
+                    align-items: center;
+                    &::after{
+                        position: absolute;
+                        left: 0.5rem;
+                    }
+                }
+                &:focus{
+                    border-color: #625076;
+                    box-shadow: none;
+                }
+                option{
+                    width: 100%;
+                    max-height: 20rem;
+                    overflow: auto;
+                    .dropdown-item{
+                        padding: 0.6rem;
+                        width: 70%;
+                        margin: 0 auto;
+                        &:not(:last-child){
+                            border-bottom: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

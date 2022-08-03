@@ -87,6 +87,14 @@
   .advertising #_file_content #_assignation #_file_content #_details #_price_history table {
     font-size: 0.8em;
   }
+
+  header .headerContent {
+    width: 60%;
+  }
+  header .headerContent .headerItems a {
+    font-size: small;
+    padding: 5px 10px;
+  }
 }
 @media only screen and (max-width: 767.98px) {
   .header {

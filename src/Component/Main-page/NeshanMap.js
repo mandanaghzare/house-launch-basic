@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
-
+import { usePosition } from 'use-position';
 import 'leaflet/dist/leaflet.css';
 import './leaflet/geosearch.css';
 import teslaData from "./data/tesla-site.json";
@@ -21,7 +21,18 @@ L.Icon.Default.mergeOptions({
 
 function NeshanMap(props) {
   const prov = OpenStreetMapProvider();
-
+  const watch = true;
+  const {
+    latitude,
+    longitude,
+    speed,
+    timestamp,
+    accuracy,
+    heading,
+    error,
+  } = usePosition(watch);
+  console.log(usePosition.u)
+  
   return (
     <div className="">
       <MapContainer center={[35.699722, 51.337222]} zoom={13} scrollWheelZoom={true}>
