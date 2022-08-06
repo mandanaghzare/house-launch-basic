@@ -13,21 +13,15 @@
             flex-wrap: wrap;
             select{
                 width: 45%;
-                    padding: .7rem .5rem;
-                    text-align: right;
-                button{
-                    width: 100%;
-                    outline: none;
-                    background-color: transparent;
-                    color: #1c1917;
-                    display: flex;
-                    border: 1px solid #625076;
-                    align-items: center;
-                    &::after{
-                        position: absolute;
-                        left: 0.5rem;
-                    }
-                }
+                padding: .7rem .5rem;
+                text-align: right;
+                appearance: none;
+                border: 1px solid #625076;
+                border-radius: 0.8rem;
+                background-image: url('../../../Img/icons/down-arrow-svgrepo-com.svg');
+                background-size: 1rem;
+                background-repeat: no-repeat;
+                background-position: 20px center;
                 &:focus{
                     border-color: #625076;
                     box-shadow: none;
@@ -43,6 +37,123 @@
                         &:not(:last-child){
                             border-bottom: 1px solid #ddd;
                         }
+                    }
+                }
+            }
+            input[type=text]{
+                padding: .7rem .5rem;
+                width: 48%;
+                margin-top: 2rem;
+                border: 1px solid #625076;
+                border-radius: 0.8rem;
+                background-size: cover;
+            }
+            #_img_upload{
+                margin-top: 3rem;
+                width: 100%;
+                p{
+                    font-size: 1.3em;
+                }
+                #_img_list{
+                    display: flex;
+                    justify-content: flex-start;
+                    direction: ltr;
+                    flex-wrap: wrap;
+                    input[type=file]{
+                        display: none;
+                    }
+                    label{
+                        width: 24%;
+                        aspect-ratio : 1 / 1;
+                        display: flex;
+                        margin: .2rem;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        cursor: pointer;
+                        border: 2px dashed#625076;
+                        border-radius: 0.4em;
+                        svg{
+                            font-size: 2em;
+                        }
+                    }
+                    .items{
+                        width: 24%;
+                        aspect-ratio : 1 / 1;
+                        overflow: hidden;
+                        margin: .2rem;                        
+                        border: 2px dashed#625076;
+                        img{
+                            min-width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        #_location{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-top: 5rem;
+            p{
+                width: 50%;
+                font-size: 1.3em;
+            }
+            #_map{
+                height: 70vh;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        #_bot_info{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 5rem 0;
+            select{
+                width: 30%;
+                padding: .7rem .5rem;
+                text-align: right;
+                appearance: none;
+                border: 1px solid #625076;
+                border-radius: 0.8rem;
+                background-image: url('../../../Img/icons/down-arrow-svgrepo-com.svg');
+                background-size: 1rem;
+                background-repeat: no-repeat;
+                background-position: 20px center;
+                option{
+                    width: 100%;
+                    max-height: 20rem;
+                    overflow: auto;
+                    .dropdown-item{
+                        padding: 0.6rem;
+                        width: 70%;
+                        margin: 0 auto;
+                        &:not(:last-child){
+                            border-bottom: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+            p{
+                width: 100%;
+                font-size: 1.3em;
+            }
+            .options{
+                width: 100%;
+                margin-top: 2rem;
+                display: flex;
+                flex-wrap: wrap;
+                label{
+                    width: 30%;
+                    margin-bottom: 1rem;
+                    font-size: 1.2em;
+                    input{
+                        margin-left: .4rem;
                     }
                 }
             }
