@@ -1,18 +1,18 @@
-.advertising {
+.advertisings {
   padding: 5rem;
 }
-.advertising #_tabs {
+.advertisings #_tabs {
   position: sticky;
   top: 1rem;
 }
-.advertising #gallery {
+.advertisings #gallery {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   height: 80vh;
 }
-.advertising #gallery .buttons {
+.advertisings #gallery .buttons {
   width: 5%;
   position: absolute;
   top: 1rem;
@@ -21,7 +21,7 @@
   flex-direction: column;
   z-index: 1;
 }
-.advertising #gallery .buttons button {
+.advertisings #gallery .buttons button {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 2rem;
@@ -30,20 +30,20 @@
   align-items: center;
   justify-content: center;
 }
-.advertising #gallery .buttons button .red {
+.advertisings #gallery .buttons button .red {
   fill: #fd3d3d;
 }
-.advertising #gallery .buttons button:first-child {
+.advertisings #gallery .buttons button:first-child {
   border-radius: 1rem 1rem 0 0;
   margin-bottom: 0.3rem;
 }
-.advertising #gallery .buttons button:last-child {
+.advertisings #gallery .buttons button:last-child {
   border-radius: 0 0 1rem 1rem;
 }
-.advertising #gallery .buttons button:hover {
+.advertisings #gallery .buttons button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.advertising #gallery .buttons button #__social_media {
+.advertisings #gallery .buttons button #__social_media {
   position: absolute;
   height: 40px;
   line-height: 40px;
@@ -60,10 +60,10 @@
   transition: 0.3s ease opacity;
   opacity: 0;
 }
-.advertising #gallery .buttons button #__social_media.show {
+.advertisings #gallery .buttons button #__social_media.show {
   opacity: 1;
 }
-.advertising #gallery .buttons button #__social_media:before {
+.advertisings #gallery .buttons button #__social_media:before {
   position: absolute;
   top: -10px;
   left: 50%;
@@ -74,13 +74,13 @@
   border-right: 10px solid transparent;
   border-bottom: 10px solid #707070;
 }
-.advertising #gallery .buttons button #__social_media button {
+.advertisings #gallery .buttons button #__social_media button {
   margin: 0em 0.5em;
 }
-.advertising #gallery .buttons button #__social_media button svg path {
+.advertisings #gallery .buttons button #__social_media button svg path {
   width: 0.5em;
 }
-.advertising #gallery #_one_big_img {
+.advertisings #gallery #_one_big_img {
   width: 75%;
   position: relative;
   margin-left: 10px;
@@ -88,11 +88,11 @@
   overflow: hidden;
   border-radius: 0 1em 1em 0;
 }
-.advertising #gallery #_one_big_img img {
+.advertisings #gallery #_one_big_img img {
   min-width: 100%;
   min-height: 100%;
 }
-.advertising #gallery #_one_big_img .imgSlide {
+.advertisings #gallery #_one_big_img .imgSlide {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   bottom: 1rem;
@@ -105,13 +105,13 @@
   font-size: 1.2em;
   padding: 1rem;
 }
-.advertising #gallery #_one_big_img .imgSlide span {
+.advertisings #gallery #_one_big_img .imgSlide span {
   margin-right: 5px;
 }
-.advertising #gallery #_one_big_img .imgSlide:hover {
+.advertisings #gallery #_one_big_img .imgSlide:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.advertising #gallery #_two_small_img {
+.advertisings #gallery #_two_small_img {
   width: 25%;
   height: 100%;
   position: relative;
@@ -121,126 +121,126 @@
   border-radius: 1em 0 0 1em;
   overflow: hidden;
 }
-.advertising #gallery #_two_small_img #_smallimg {
+.advertisings #gallery #_two_small_img #_smallimg {
   height: 50%;
   overflow: hidden;
 }
-.advertising #gallery #_two_small_img #_smallimg:first-child {
+.advertisings #gallery #_two_small_img #_smallimg:first-child {
   margin-bottom: 10px;
 }
-.advertising #gallery #_two_small_img #_smallimg img {
+.advertisings #gallery #_two_small_img #_smallimg img {
   min-width: 100%;
   min-height: 100%;
 }
-.advertising .react-time-picker__inputGroup__input {
+.advertisings .react-time-picker__inputGroup__input {
   outline: none;
 }
-.advertising #_file_content {
+.advertisings #_file_content {
   display: flex;
   padding: 2rem 1rem;
 }
-.advertising #_file_content #_details {
+.advertisings #_file_content #_details {
   width: 75%;
   padding-left: 1rem;
 }
-.advertising #_file_content #_details #__main_details {
+.advertisings #_file_content #_details #__main_details {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.advertising #_file_content #_details #__main_details li {
+.advertisings #_file_content #_details #__main_details li {
   width: 50%;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.advertising #_file_content #_details #__main_details li:nth-child(even) {
+.advertisings #_file_content #_details #__main_details li:nth-child(even) {
   text-align: left;
 }
-.advertising #_file_content #_details #__sub_details {
+.advertisings #_file_content #_details #__sub_details {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.advertising #_file_content #_details #__sub_details li {
+.advertisings #_file_content #_details #__sub_details li {
   width: 25%;
   margin-bottom: 0.5rem;
 }
-.advertising #_file_content #_details #_map_pin {
+.advertisings #_file_content #_details #_map_pin {
   margin-top: 10rem;
 }
-.advertising #_file_content #_details #_map_pin img {
+.advertisings #_file_content #_details #_map_pin img {
   width: 100%;
 }
-.advertising #_file_content #_details #_explain {
+.advertisings #_file_content #_details #_explain {
   margin-top: 7rem;
   padding-right: 1rem;
   border-right: 1px solid #707070;
 }
-.advertising #_file_content #_details #_price_history {
+.advertisings #_file_content #_details #_price_history {
   margin-top: 7rem;
 }
-.advertising #_file_content #_details #_price_history table {
+.advertisings #_file_content #_details #_price_history table {
   width: 100%;
   margin-top: 1rem;
   background-color: #f5f5f4;
 }
-.advertising #_file_content #_details #_price_history table tr {
+.advertisings #_file_content #_details #_price_history table tr {
   border: 1px solid #AFAFAF;
   color: #484848;
 }
-.advertising #_file_content #_details #_price_history table tr th {
+.advertisings #_file_content #_details #_price_history table tr th {
   background-color: #E5E5E5;
   padding: 1rem;
 }
-.advertising #_file_content #_details #_price_history table tr td {
+.advertisings #_file_content #_details #_price_history table tr td {
   padding: 1rem;
 }
-.advertising #_file_content #_assignation {
+.advertisings #_file_content #_assignation {
   padding-right: 1rem;
   width: 25%;
 }
-.advertising #_file_content #_assignation .react-tabs__tab-list {
+.advertisings #_file_content #_assignation .react-tabs__tab-list {
   margin-bottom: 0;
 }
-.advertising #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab {
+.advertisings #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab {
   width: 50%;
   padding: 1rem;
   text-align: center;
 }
-.advertising #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab::after {
+.advertisings #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab::after {
   display: none;
 }
-.advertising #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
+.advertisings #_file_content #_assignation .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
   border: 2px solid #a7a7a7;
   border-bottom: none;
   background-color: #fafaf9;
 }
-.advertising #_file_content #_assignation .dateInput, .advertising #_file_content #_assignation .timeInput, .advertising #_file_content #_assignation .phoneNum {
+.advertisings #_file_content #_assignation .dateInput, .advertisings #_file_content #_assignation .timeInput, .advertisings #_file_content #_assignation .phoneNum {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
   justify-content: space-between;
 }
-.advertising #_file_content #_assignation .dateInput .DatePicker, .advertising #_file_content #_assignation .dateInput .react-time-picker, .advertising #_file_content #_assignation .timeInput .DatePicker, .advertising #_file_content #_assignation .timeInput .react-time-picker, .advertising #_file_content #_assignation .phoneNum .DatePicker, .advertising #_file_content #_assignation .phoneNum .react-time-picker {
+.advertisings #_file_content #_assignation .dateInput .DatePicker, .advertisings #_file_content #_assignation .dateInput .react-time-picker, .advertisings #_file_content #_assignation .timeInput .DatePicker, .advertisings #_file_content #_assignation .timeInput .react-time-picker, .advertisings #_file_content #_assignation .phoneNum .DatePicker, .advertisings #_file_content #_assignation .phoneNum .react-time-picker {
   width: 60%;
 }
-.advertising #_file_content #_assignation .dateInput .DatePicker__input, .advertising #_file_content #_assignation .timeInput .DatePicker__input, .advertising #_file_content #_assignation .phoneNum .DatePicker__input {
+.advertisings #_file_content #_assignation .dateInput .DatePicker__input, .advertisings #_file_content #_assignation .timeInput .DatePicker__input, .advertisings #_file_content #_assignation .phoneNum .DatePicker__input {
   width: 100%;
   border-radius: 0.5rem;
 }
-.advertising #_file_content #_assignation .dateInput .react-time-picker__wrapper, .advertising #_file_content #_assignation .timeInput .react-time-picker__wrapper, .advertising #_file_content #_assignation .phoneNum .react-time-picker__wrapper {
+.advertisings #_file_content #_assignation .dateInput .react-time-picker__wrapper, .advertisings #_file_content #_assignation .timeInput .react-time-picker__wrapper, .advertisings #_file_content #_assignation .phoneNum .react-time-picker__wrapper {
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
 }
-.advertising #_file_content #_assignation .dateInput .react-time-picker__wrapper, .advertising #_file_content #_assignation .timeInput .react-time-picker__wrapper, .advertising #_file_content #_assignation .phoneNum .react-time-picker__wrapper {
+.advertisings #_file_content #_assignation .dateInput .react-time-picker__wrapper, .advertisings #_file_content #_assignation .timeInput .react-time-picker__wrapper, .advertisings #_file_content #_assignation .phoneNum .react-time-picker__wrapper {
   direction: ltr;
 }
-.advertising #_file_content #_assignation .dateInput p, .advertising #_file_content #_assignation .timeInput p, .advertising #_file_content #_assignation .phoneNum p {
+.advertisings #_file_content #_assignation .dateInput p, .advertisings #_file_content #_assignation .timeInput p, .advertisings #_file_content #_assignation .phoneNum p {
   margin-left: 0.5rem;
   margin-bottom: 0;
 }
-.advertising #_file_content #_assignation .phoneNum input {
+.advertisings #_file_content #_assignation .phoneNum input {
   background-color: #ffffff;
   border: 1px solid #ddd;
   width: 60%;
@@ -249,15 +249,15 @@
   border-radius: 0.5rem;
   font-size: 0.9em;
 }
-.advertising #_file_content #_assignation .react-time-picker__clock-button {
+.advertisings #_file_content #_assignation .react-time-picker__clock-button {
   display: none;
 }
-.advertising #_file_content #_assignation .react-tabs__tab-panel {
+.advertisings #_file_content #_assignation .react-tabs__tab-panel {
   padding: 1rem;
   border: 2px solid #a7a7a7;
   border-top: none;
 }
-.advertising #_file_content #_assignation .submit {
+.advertisings #_file_content #_assignation .submit {
   color: #DFDFDF;
   background-color: #8F0000;
   padding: 0.5rem;
@@ -266,19 +266,19 @@
   font-size: 1em;
   transition: 0.3s ease;
 }
-.advertising #_file_content #_assignation .submit:hover {
+.advertisings #_file_content #_assignation .submit:hover {
   background-color: #6d0101;
 }
-.advertising #_file_content #_assignation .description {
+.advertisings #_file_content #_assignation .description {
   margin-top: 1rem;
   font-size: 0.8em;
   text-align: justify;
 }
-.advertising #_file_content #_assignation form {
+.advertisings #_file_content #_assignation form {
   display: flex;
   flex-direction: column;
 }
-.advertising #_file_content #_assignation form input, .advertising #_file_content #_assignation form textarea {
+.advertisings #_file_content #_assignation form input, .advertisings #_file_content #_assignation form textarea {
   background-color: #ffffff;
   border: 1px solid #ddd;
   width: 100%;
@@ -289,40 +289,40 @@
   font-size: 0.9em;
   resize: none;
 }
-.advertising #_file_content #_assignation form textarea {
+.advertisings #_file_content #_assignation form textarea {
   text-align: right;
 }
-.advertising #_similar_files {
+.advertisings #_similar_files {
   margin-top: 5rem;
 }
-.advertising #_similar_files .swiper-wrapper .swiper-slide .advItem {
+.advertisings #_similar_files .swiper-wrapper .swiper-slide .advItem {
   width: 100%;
   margin-bottom: 0;
 }
-.advertising #_similar_files .swiper-wrapper .swiper-slide .advItem #_details {
+.advertisings #_similar_files .swiper-wrapper .swiper-slide .advItem #_details {
   width: 100%;
 }
-.advertising #_similar_files .swiper-wrapper .swiper-slide .advItem #_details #__sub_details li {
+.advertisings #_similar_files .swiper-wrapper .swiper-slide .advItem #_details #__sub_details li {
   width: 50%;
 }
-.advertising #_similar_files .swiper-button-prev {
+.advertisings #_similar_files .swiper-button-prev {
   right: 0rem;
   border-radius: 50% 0 0 50%;
   background: white;
   background: linear-gradient(270deg, white 0%, rgba(255, 255, 255, 0) 100%);
 }
-.advertising #_similar_files .swiper-button-next {
+.advertisings #_similar_files .swiper-button-next {
   left: 0rem;
   border-radius: 0 50% 50% 0;
   background: white;
   background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%);
 }
-.advertising #_similar_files .swiper-button-prev, .advertising #_similar_files .swiper-button-next {
+.advertisings #_similar_files .swiper-button-prev, .advertisings #_similar_files .swiper-button-next {
   height: 100%;
   top: 22px;
   padding: 2rem;
 }
-.advertising #_similar_files .swiper-button-prev::after, .advertising #_similar_files .swiper-button-next::after {
+.advertisings #_similar_files .swiper-button-prev::after, .advertisings #_similar_files .swiper-button-next::after {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 50%;
   color: #f5f5f4;

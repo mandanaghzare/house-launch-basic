@@ -47,7 +47,7 @@
   width: 100%;
   border: 1px solid #a9a1b1;
   border-radius: 0.4em;
-  background-color: transparent;
+  background-color: #fafaf9;
 }
 .register form ._field input:-internal-autofill-selected, .signIn form ._field input:-internal-autofill-selected {
   background-color: transparent;

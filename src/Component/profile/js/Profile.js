@@ -22,8 +22,8 @@ function Profile() {
                 <TabList>
                     <Tab><MdOutlineAdminPanelSettings /> <span>پنل مدیریت</span><BsArrowLeft className="leftArrow" /></Tab>
                     <Tab><SiHomeadvisor /> <span>اگهی ها</span><BsArrowLeft className="leftArrow" /></Tab>
-                    <Tab><AiOutlineHeart /> <span>علاقمندی های</span><BsArrowLeft className="leftArrow" /></Tab>
-                    <li><MdOutlineExitToApp /> <span>خروج</span><BsArrowLeft className="leftArrow" /></li>
+                    <Tab><AiOutlineHeart /> <span>علاقمندی ها</span><BsArrowLeft className="leftArrow" /></Tab>
+                    {/* <li><MdOutlineExitToApp /> <span>خروج</span><BsArrowLeft className="leftArrow" /></li> */}
                 </TabList>
             </div>
             <div className="tabContent">

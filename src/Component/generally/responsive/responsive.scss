@@ -10,10 +10,25 @@
     .advItem #_details ul{
         font-size: .9em;
     }
+    .register form, .signIn form{
+        width: 30%;
+    }
+    .register .tabs, .signIn .tabs{
+        width: 35%;
+    }
+    .profile{
+        padding: 5%;
+        .tabContent .panel form {
+            width: 50%;
+        }
+    }
 }
 @media only screen and (max-width: 1199.98px) {
     .advertising #_file_content #_assignation, .advertising #gallery #_two_small_img{
         width: 40%;
+    }
+    .advItem{
+        width: 100%;
     }
     .advertising #gallery #_one_big_img, .advertising #_file_content #_details{
         width: 60%;
@@ -26,6 +41,12 @@
     }
     header.goBot .headerItems a{
         width: 100%;
+    }
+    .register form, .signIn form{
+        width: 50%;
+    }
+    .register .tabs, .signIn .tabs{
+        width: 60%;
     }
 }
 @media only screen and (max-width: 990.98px) {
@@ -85,11 +106,20 @@
             }
         }
     }
+    .profile .tablist .name{
+        font-size: 1em;
+    }
     header .headerContent{
         width: 60%;
         .headerItems a {
             font-size: small;
             padding: 5px 10px;
+        }
+    }
+    .profile .tabContent .panel {
+        flex-direction: column;
+        form{
+            width: 100%;
         }
     }
 }
@@ -108,15 +138,82 @@
                 font-size: .9em;
             }
         } 
-    } 
+    }
+    .profile{
+        flex-direction: column;
+        .tablist{
+            width: 100%;
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            box-shadow: none;
+            position: relative;
+            .name{
+                justify-content: flex-start;
+                background-color: transparent;
+                p{
+                    color: #0f172a;
+                }
+            }
+            ul{
+                display: flex;
+                li{
+                    border: 1px solid #625076;
+                    font-size: .8em;
+                    justify-content: center;
+                    padding: 1rem;
+                    border-radius: 3rem 0 0;
+                    overflow: hidden;
+                    background-color: #fafaf9;
+                    position: relative;
+                    &:first-child{
+                        right: 0.5rem;
+                        z-index: 3;
+                    }
+                    &:nth-child(2){
+                        z-index: 2;
+                        left: 0.5rem;
+                    }
+                    &:nth-child(3){
+                        z-index: 1;
+                        left: 1rem;
+                    }
+                    svg{
+                        display: none;
+                    }
+                    span{
+                        padding: 0;
+                    }
+                    &.react-tabs__tab--selected{
+                        background-color: #CED7C5;
+                        border-radius: 1rem 0 0;
+                        border: 1px solid #625076;
+                        .leftArrow{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .tabContent{
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+    .react-tabs__tab-list{
+        display: flex;
+    }
     .advertising {
-        padding: 2rem;
+        padding: 0rem;
         #_file_content{
             padding: 2rem 0rem;
         }
     }
     .swiper-button-prev, .swiper-button-next{
         display: none;
+    }
+    .register form, .signIn form{
+        width: 60%;
     }
 }
 @media only screen and (max-width: 575.98px) {
@@ -196,6 +293,23 @@
         overflow-x: auto;
         table{
             min-width: 500px;
+        }
+    }
+    .register form, .signIn form{
+        width: 90%;
+    }
+    .register form .submit, .signIn form .submit{
+        flex-direction: column;
+        button{
+            margin-bottom: .5rem;
+            width: 95%;
+            font-size: .8em;
+        }
+    }
+    .register .tabs, .signIn .tabs{
+        width: 85%;
+        button{
+            font-size: 1em;
         }
     }
 }

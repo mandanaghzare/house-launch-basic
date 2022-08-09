@@ -4,6 +4,7 @@ import '../css/style.css';
 import StatesIran from '../../../data/states.json';
 import CitiesIran from '../../../data/cities.json';
 import { AiOutlinePlusCircle } from 'react-icons/ai'
+import Checkbox from './CheckBox';
 
 function AdInsert() {
     const [stateVal,setStateVal]=useState('');
@@ -39,7 +40,7 @@ function AdInsert() {
     }
 
     const [checked, setChecked] = React.useState(false);
-    const handleChange = () => {
+    const handleChange = (e) => {
         setChecked(!checked);
     };
 
@@ -99,63 +100,19 @@ function AdInsert() {
                         <option value="">کف سرامیک</option>
                     </select>
                     <div className="options">
-                        <label>
-                            <input
-                            id="1"
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            />
-                            انباری
-                        </label>
-                        <label>
-                            <input
-                            id="2"
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            />
-                            آسانسور
-                        </label>
-                        <label>
-                            <input
-                            id="3"
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            />
-                            پارگینگ
-                        </label>
-                        <label>
-                            <input
-                            id="4"
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            />
-                            سند
-                        </label>
-                        <label>
-                            <input
-                            id="5"
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            />
-                            گاز رومیزی
-                        </label>
-                        <label>
-                            <input
-                            id="6"
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            />
-                            پکیج
-                        </label>
-
+                        <Checkbox value={'انباری'} />
+                        <Checkbox value={'آسانسور'} />
+                        <Checkbox value={'پارگینگ'} />
+                        <Checkbox value={'سند'} />
+                        <Checkbox value={'گاز رومیزی'} />
+                        <Checkbox value={'پکیج'} />
+                    </div>
+                    <div className="description">
+                        <p>توضیحات</p>
+                        <textarea placeholder="توضیحات را بنویسد"></textarea>
                     </div>
                 </div>
+                <button className="submit" type="submit">ثبت آگهی</button>
             </form>
         </div>
     )

@@ -86,6 +86,7 @@
   overflow: hidden;
   margin: 0.2rem;
   border: 2px dashed #625076;
+  border-radius: 0.4em;
 }
 .adInsert #_adInsert_content #_top_info #_img_upload #_img_list .items img {
   min-width: 100%;
@@ -152,9 +153,34 @@
 }
 .adInsert #_adInsert_content #_bot_info .options label {
   width: 30%;
+  cursor: pointer;
   margin-bottom: 1rem;
   font-size: 1.2em;
 }
 .adInsert #_adInsert_content #_bot_info .options label input {
   margin-left: 0.4rem;
+}
+.adInsert #_adInsert_content #_bot_info .description {
+  width: 100%;
+  margin-top: 3rem;
+}
+.adInsert #_adInsert_content #_bot_info .description textarea {
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  min-height: 15rem;
+  border: 1px solid #625076;
+  border-radius: 0.4rem;
+}
+.adInsert .submit {
+  background-color: #4B5563;
+  padding: 0.7rem 3rem;
+  border-radius: 4px;
+  font-size: 1.2em;
+  color: #fafaf9;
+  margin: 0 0.5rem;
+  margin-bottom: 5rem;
+}
+.adInsert .submit:hover {
+  background-color: #454e5c;
 }

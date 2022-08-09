@@ -38,7 +38,7 @@ function Advertising() {
     return (
         <>
             <Menu />
-            <div className="advertising">
+            <div className="advertisings">
                 <div id="gallery">
                     <div className="buttons">
                         <button onClick={heartIcon}><BsFillSuitHeartFill className={`${redHeart ? 'red' : '' }`} /></button>

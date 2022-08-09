@@ -83,6 +83,7 @@
                         overflow: hidden;
                         margin: .2rem;                        
                         border: 2px dashed#625076;
+                        border-radius: .4em;
                         img{
                             min-width: 100%;
                             height: 100%;
@@ -150,6 +151,7 @@
                 flex-wrap: wrap;
                 label{
                     width: 30%;
+                    cursor: pointer;
                     margin-bottom: 1rem;
                     font-size: 1.2em;
                     input{
@@ -157,6 +159,30 @@
                     }
                 }
             }
+            .description{
+                width: 100%;
+                margin-top: 3rem;
+                textarea{
+                    width: 100%;
+                    resize: none;
+                    padding: 1rem;
+                    min-height: 15rem;
+                    border: 1px solid #625076;
+                    border-radius: .4rem;
+                }
+            }
+        }
+    }
+    .submit{
+        background-color: #4B5563;
+        padding: 0.7rem 3rem;
+        border-radius: 4px;
+        font-size: 1.2em;
+        color: #fafaf9;
+        margin: 0 .5rem;
+        margin-bottom: 5rem;
+        &:hover{
+            background-color: #454e5c;
         }
     }
 }
