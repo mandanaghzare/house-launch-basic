@@ -46,6 +46,9 @@
   .register .tabs, .signIn .tabs {
     width: 60%;
   }
+  .adInsert #_adInsert_content #_top_info #_img_upload #_img_list label, .adInsert #_adInsert_content #_top_info #_img_upload #_img_list .items {
+    width: 30%;
+  }
 }
 @media only screen and (max-width: 990.98px) {
   .advertising #gallery {
@@ -102,6 +105,15 @@
   .advertising #_file_content #_assignation #_file_content #_details #_price_history table {
     font-size: 0.8em;
   }
+  .adInsert #_adInsert_content #_bot_info, .adInsert #_adInsert_content #_top_info {
+    width: 70%;
+  }
+  .adInsert #_adInsert_content #_top_info #_img_upload p {
+    font-size: 1em;
+  }
+  .adInsert #_adInsert_content #_top_info #_img_upload #_img_list label, .adInsert #_adInsert_content #_top_info #_img_upload #_img_list .items {
+    width: 48%;
+  }
   .profile .tablist .name {
     font-size: 1em;
   }
@@ -134,6 +146,17 @@
     padding-left: 2rem;
     padding-right: 0;
     font-size: 0.9em;
+  }
+  .adInsert #_adInsert_content {
+    font-size: 0.8em;
+  }
+  .adInsert #_adInsert_content #_bot_info .options label {
+    font-size: 1em;
+  }
+  .adInsert #_adInsert_content #_bot_info select {
+    width: 100%;
+    font-size: 0.8em;
+    margin-bottom: 0.5rem;
   }
   .profile {
     flex-direction: column;
@@ -213,21 +236,74 @@
   }
 }
 @media only screen and (max-width: 575.98px) {
-  .header .menu {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .adInsert #_adInsert_content {
+    padding-top: 2rem;
+  }
+  .header {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
-    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 7px -3px rgba(0, 0, 0, 0.8);
+  }
+  .header .humMenu {
+    display: block;
+  }
+  .header .menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    width: 100%;
   }
   .header .menu a {
-    margin-top: 1rem;
-    color: #e7e5e4;
+    color: #1c1917;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    font-size: 0.7em;
+  }
+  .header .menu a:last-child {
+    border-bottom: none;
+  }
+  .header .menu #_name {
+    padding: 2rem;
+    border-bottom: 2px solid #625076;
+    font-size: 1.3em;
+  }
+  .header .menu.show {
+    transform: translateX(0px);
+  }
+  .adInsert #_adInsert_content #_bot_info {
+    width: 90%;
+  }
+  .adInsert #_adInsert_content #_bot_info .options {
+    flex-direction: column;
+  }
+  .adInsert #_adInsert_content #_top_info {
+    width: 90%;
+  }
+  .adInsert #_adInsert_content #_top_info input[type=text] {
+    margin-top: 0.5rem;
+  }
+  .adInsert #_adInsert_content #_top_info select {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .adInsert #_adInsert_content #_top_info #_img_upload {
+    margin-bottom: 2rem;
+  }
+  .adInsert #_adInsert_content #_location {
+    margin-top: 0;
+  }
+  .profile .tabContent {
+    padding: 0.5rem;
+  }
+  .profile .tablist ul li {
+    padding: 0.5rem;
+    font-size: 0.6em;
   }
   .advItem #_details ul li {
     width: 100%;
@@ -235,14 +311,15 @@
   .advItem #_details ul li p.text-left {
     text-align: right;
   }
+  .profile .tabContent .panel .submit {
+    width: 100%;
+    text-align: center;
+  }
   .advItem #_details ul {
     font-size: 0.8em;
   }
   #__sub_details li p {
     font-size: 10px !important;
-  }
-  .advertising {
-    padding: 1rem;
   }
   .advertising #gallery .buttons {
     width: 15%;

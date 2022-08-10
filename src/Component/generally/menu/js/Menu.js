@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
 
 function Menu() {
   return (
     <div className="header">
-        <div className="menu">
-            <a href="">پنل مدیریت</a>
-            <a href="">درج آگهی</a>
-            <a href="">خرید رهن اجاره</a>
-        </div>
-        <div className="logo">
-            <img src={require("../../../../Img/logo.png")} alt="" />
-        </div>
+      <div className="menu">
+          <Link exact to='/Profile'>پنل مدیریت</Link>
+          <Link to='/AdInsert'>درج آگهی</Link>
+          <Link to='/Advertising'>خرید رهن اجاره</Link>
+      </div>
+      <div className="logo d-none d-sm-block">
+          <img src={require("../../../../Img/logo.png")} alt="" />
+      </div>
     </div>
   )
 }

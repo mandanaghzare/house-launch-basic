@@ -21,7 +21,6 @@
   font-size: 1.8em;
   padding: 2.5rem;
   font-weight: 500;
-  position: sticky;
 }
 .profile .tablist .name p {
   color: #d4d4d8;
@@ -65,6 +64,10 @@
 }
 .profile .tablist ul li.react-tabs__tab--selected .leftArrow {
   display: block;
+}
+.profile .shkjasdhik {
+  height: 100%;
+  width: 100%;
 }
 .profile .tabContent {
   width: 69%;

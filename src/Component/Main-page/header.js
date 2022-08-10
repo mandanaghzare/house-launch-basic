@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import './style.css';
 import NeshanMap from './NeshanMap';
@@ -30,18 +31,18 @@ const Header = (props) => {
                     <img src={require('../../Img/logo.png')} alt="logo" />
                 </div>
                 <div className="headerItems">
-                    <a href="">
+                    <Link exact to='/Profile'>
                         <p>پنل مدیریت</p>
                         <span><MdAdminPanelSettings /></span>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to='/AdInsert'>
                         <p>درج آگهی</p>
                         <span id="_header_items_adv"><FcAdvertising /></span>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to='/Advertising'>
                         <p>خرید رهن اجاره</p>
                         <span id="_header_items_adv"><BiBuildingHouse /></span>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <NavigateButton onClick={goBot} />
