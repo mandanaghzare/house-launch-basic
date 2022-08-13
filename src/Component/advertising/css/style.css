@@ -89,27 +89,73 @@
   overflow: hidden;
   border-radius: 0 1em 1em 0;
 }
+.advertisings #gallery #_one_big_img .pnlm-container {
+  width: 100% !important;
+  height: 100% !important;
+}
 .advertisings #gallery #_one_big_img img {
   min-width: 100%;
   min-height: 100%;
 }
-.advertisings #gallery #_one_big_img .imgSlide {
+.advertisings #gallery #_one_big_img .galleryThumb {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
   bottom: 1rem;
   right: 1rem;
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+}
+.advertisings #gallery #_one_big_img .galleryThumb .imgSlide {
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fafaf9;
   display: flex;
   align-items: center;
   transition: 0.3s ease all;
+  margin-left: 0.2rem;
   cursor: pointer;
   font-size: 1.2em;
   padding: 1rem;
 }
-.advertisings #gallery #_one_big_img .imgSlide span {
+.advertisings #gallery #_one_big_img .galleryThumb .imgSlide span {
   margin-right: 5px;
 }
-.advertisings #gallery #_one_big_img .imgSlide:hover {
+.advertisings #gallery #_one_big_img .galleryThumb .imgSlide:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.advertisings #gallery #_one_big_img .galleryThumb .thumb {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 0.1rem;
+}
+.advertisings #gallery #_one_big_img .galleryThumb .thumb img {
+  width: 100%;
+}
+.advertisings #gallery #_one_big_img .panorama {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  width: 5rem;
+  height: 3rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fafaf9;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.advertisings #gallery #_one_big_img .panorama .rotatable {
+  display: flex;
+  align-items: center;
+}
+.advertisings #gallery #_one_big_img .panorama .rotatable span {
+  font-size: 0.5em;
+}
+.advertisings #gallery #_one_big_img .panorama:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .advertisings #gallery #_two_small_img {

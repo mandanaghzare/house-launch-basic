@@ -7,13 +7,14 @@ function Menu() {
   return (
     <div className="header">
       <div className="menu">
-          <Link exact to='/Profile'>پنل مدیریت</Link>
+          <Link to='/'>نقشه</Link>
+          <Link to='/Profile'>پنل مدیریت</Link>
           <Link to='/AdInsert'>درج آگهی</Link>
           <Link to='/Advertising'>خرید رهن اجاره</Link>
       </div>
-      <div className="logo d-none d-sm-block">
+      <Link to='/' className="logo d-none d-sm-block">
           <img src={require("../../../../Img/logo.png")} alt="" />
-      </div>
+      </Link>
     </div>
   )
 }

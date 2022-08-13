@@ -3,6 +3,7 @@ import { BsFillSuitHeartFill, BsImage, BsShareFill } from 'react-icons/bs';
 import { AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
 import { FiTwitter } from 'react-icons/fi';
 import { ImWhatsapp } from 'react-icons/im';
+import { MdOutline360 } from 'react-icons/md';
 import AdvItem from '../../generally/advItem/js/AdvItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
@@ -19,7 +20,8 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from "react-share";
-import Menu from '../../generally/menu/js/Menu'
+import Menu from '../../generally/menu/js/Menu';
+import { Pannellum, PannellumVideo } from "pannellum-react";
 
 function Advertising() {
     const [selectedDay, setSelectedDay] = useState(null);
@@ -33,6 +35,11 @@ function Advertising() {
     const [redHeart, setRedHeart] = useState(false);
     const heartIcon = () => {
       setRedHeart(!redHeart);
+    }
+
+    const [pano, setPano] = useState(false);
+    const makePano = () => {
+        setPano(!pano);
     }
 
     return (
@@ -52,10 +59,56 @@ function Advertising() {
                         </button>
                     </div>                
                     <div id="_one_big_img">
-                        <div className="imgSlide">
-                            <BsImage /><span>20</span>
+                        <div className="galleryThumb">
+                            <div className="imgSlide">
+                                <BsImage /><span>20</span>
+                            </div>
+                            <div className="thumb">
+                                <img src={require('../../../Img/panorama.jpg')} alt="" />
+                            </div>
+                            <div className="thumb">
+                                <img src={require('../../../Img/Interior-Designers-1.jpg')} alt="" />
+                            </div>
+                            <div className="thumb">
+                                <img src={require('../../../Img/Interior-Designers.jpg')} alt="" />
+                            </div>
+                            <div className="thumb">
+                                <img src={require('../../../Img/unit-design.jpg')} alt="" />
+                            </div>
                         </div>
-                        <img src={require('../../../Img/Interior-Designers-1.jpg')} alt="" />
+                        <div className="panorama" onClick={makePano}>
+                            {
+                                pano
+                                ?
+                                <div className="rotatable"><MdOutline360 /><span>360°</span></div>
+                                :
+                                <BsImage />
+                            }
+                        </div>
+                        {pano ?
+                        <img src={require('../../../Img/panorama.jpg')} alt="" />
+                        :
+                        <Pannellum
+                            min-width="100%"
+                            min-height="100%"
+                            image={require('../../../Img/panorama.jpg')}
+                            pitch={10}
+                            yaw={10}
+                            hfov={110}
+                            autoLoad
+                            showZoomCtrl={false}
+                            onLoad={() => {
+                            console.log("panorama loaded");
+                            }}>
+                            <Pannellum.Hotspot
+                                type="custom"
+                                pitch={-5}
+                                yaw={-5}
+                                handleClick={(evt, name) => console.log(name)}
+                                name="hs1"
+                            />
+                        </Pannellum>
+                        }
                     </div>
                     <div id="_two_small_img">
                         <div id="_smallimg">

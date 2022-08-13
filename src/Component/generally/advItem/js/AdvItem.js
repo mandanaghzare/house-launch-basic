@@ -2,10 +2,11 @@ import React from 'react';
 import '../css/style.css';
 import { GrGallery } from 'react-icons/gr';
 import { GiClick } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 
 function AdvItem() {
   return (
-    <div className="advItem">
+    <Link to="/Advertising" className="advItem">
         <div id="_image">
             <img src={require('../../../../Img/Interior-Designers.jpg')} alt="" />
             <div id="_gallery"><GrGallery /></div>
@@ -58,7 +59,7 @@ function AdvItem() {
                 </li>
             </ul>
         </div>
-    </div>
+    </Link>
   )
 }
 
