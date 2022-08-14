@@ -345,9 +345,12 @@
         margin-top: 5rem;
         .swiper-wrapper{
             .swiper-slide{
+                padding: .8rem 0;
                 .advItem{
+                    box-shadow: 0px 0px 20px -15px rgb(0 0 0 / 80%);
                     width: 100%;
                     margin-bottom: 0;
+                    display: block;
                     #_details{
                         width: 100%;
                         #__sub_details{

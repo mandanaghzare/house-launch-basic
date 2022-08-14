@@ -8,9 +8,11 @@ function Menu() {
     <div className="header">
       <div className="menu">
           <Link to='/'>نقشه</Link>
-          <Link to='/Profile'>پنل مدیریت</Link>
-          <Link to='/AdInsert'>درج آگهی</Link>
           <Link to='/Advertising'>خرید رهن اجاره</Link>
+          <Link to='/AdInsert'>درج آگهی</Link>
+          <Link to='/Profile'>پنل مدیریت</Link>
+          <Link to='/Blog'>بلاگ</Link>
+          <Link to='/Contact-us'>ارتباط با ما</Link>
       </div>
       <Link to='/' className="logo d-none d-sm-block">
           <img src={require("../../../../Img/logo.png")} alt="" />

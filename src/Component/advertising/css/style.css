@@ -342,9 +342,14 @@
 .advertisings #_similar_files {
   margin-top: 5rem;
 }
+.advertisings #_similar_files .swiper-wrapper .swiper-slide {
+  padding: 0.8rem 0;
+}
 .advertisings #_similar_files .swiper-wrapper .swiper-slide .advItem {
+  box-shadow: 0px 0px 20px -15px rgba(0, 0, 0, 0.8);
   width: 100%;
   margin-bottom: 0;
+  display: block;
 }
 .advertisings #_similar_files .swiper-wrapper .swiper-slide .advItem #_details {
   width: 100%;

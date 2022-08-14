@@ -48,8 +48,8 @@ function Advertising() {
             <div className="advertisings">
                 <div id="gallery">
                     <div className="buttons">
-                        <button onClick={heartIcon}><BsFillSuitHeartFill className={`${redHeart ? 'red' : '' }`} /></button>
-                        <button onClick={socialMedia}><BsShareFill />
+                        <button type="button" onClick={heartIcon}><BsFillSuitHeartFill className={`${redHeart ? 'red' : '' }`} /></button>
+                        <button type="button" onClick={socialMedia}><BsShareFill />
                             <div id="__social_media" className={`${showSm ? 'show' : ''}`}>
                             <TwitterShareButton><AiOutlineLinkedin /></TwitterShareButton>
                             <TelegramShareButton><FiTwitter /></TelegramShareButton>
@@ -92,9 +92,9 @@ function Advertising() {
                             min-width="100%"
                             min-height="100%"
                             image={require('../../../Img/panorama.jpg')}
-                            pitch={10}
+                            pitch={0}
                             yaw={10}
-                            hfov={110}
+                            hfov={150}
                             autoLoad
                             showZoomCtrl={false}
                             onLoad={() => {
@@ -104,6 +104,13 @@ function Advertising() {
                                 type="custom"
                                 pitch={-5}
                                 yaw={-5}
+                                handleClick={(evt, name) => console.log(name)}
+                                name="hs1"
+                            />
+                            <Pannellum.Hotspot
+                                type="custom"
+                                pitch={150}
+                                yaw={-50}
                                 handleClick={(evt, name) => console.log(name)}
                                 name="hs1"
                             />
@@ -256,7 +263,7 @@ function Advertising() {
                                     <p>شماره تماس </p>
                                     <input type="phone" placeholder='09123456789' />
                                 </div>
-                                <button className="submit">ثبت زمان بازدیدر</button>
+                                <button type="button" className="submit">ثبت زمان بازدیدر</button>
                                 <p className="description">با فشار دادن دکمه ثبت زمان، موافقت می کنید که نام شرکت و متخصصان املاک و مستغلات ممکن است از طریق تلفن یا پیام در مورد درخواست شما با شما تماس بگیرند، که ممکن است شامل استفاده از وسایل خودکار باشد. شما نیازی به رضایت به عنوان شرط خرید ملک، کالا یا خدمات ندارید. نرخ پیام یا داده ممکن است بر روی قبض شما اعمال شود. شما همچنین با شرایط استفاده ما موافقت می کنید. نام شرکت هیچ متخصص املاک و مستغلات را تأیید نمی کند.</p>
                             </TabPanel>
                             <TabPanel>
@@ -264,7 +271,7 @@ function Advertising() {
                                     <input type="phone" placeholder="شماره تماس" />
                                     <input type="email" placeholder="ایمیل" />
                                     <textarea rows="5" placeholder="پیام"></textarea>
-                                    <button className="submit">ارسال</button>
+                                    <button type="button" className="submit">ارسال</button>
                                 </form>
                                 <p className="description">با فشار دادن دکمه ثبت زمان، موافقت می کنید که نام شرکت و متخصصان املاک و مستغلات ممکن است از طریق تلفن یا پیام در مورد درخواست شما با شما تماس بگیرند، که ممکن است شامل استفاده از وسایل خودکار باشد. شما نیازی به رضایت به عنوان شرط خرید ملک، کالا یا خدمات ندارید. نرخ پیام یا داده ممکن است بر روی قبض شما اعمال شود. شما همچنین با شرایط استفاده ما موافقت می کنید. نام شرکت هیچ متخصص املاک و مستغلات را تأیید نمی کند.</p>
                             </TabPanel>

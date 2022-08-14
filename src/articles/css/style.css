@@ -1,0 +1,44 @@
+.article h6 {
+  margin-bottom: 2rem;
+}
+.article .content {
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.article .article_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.article .article_list .article_item {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 500px;
+  margin-bottom: 5rem;
+}
+.article .article_list .article_item #_image {
+  width: 100%;
+  border-radius: 0.8em;
+  overflow: hidden;
+}
+.article .article_list .article_item #_image img {
+  width: 100%;
+}
+.article .article_list .article_item #__title {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.article .article_list .article_item #__context {
+  font-size: 0.9em;
+}
+.article .article_list .article_item button {
+  font-size: 0.9em;
+  background-color: #625076;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 2em;
+  color: #E1E7DB;
+}/*# sourceMappingURL=style.css.map */

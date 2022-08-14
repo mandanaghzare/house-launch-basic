@@ -6,6 +6,8 @@ import Profile from './Component/profile/js/Profile';
 import Register from './Component/register/js/Register';
 import AdInsert from './Component/adInsert/js/AdInsert';
 import SignIn from './Component/register/js/SignIn';
+import Article from "./articles/js/Article";
+import Contact from "./contactUs/js/Contact";
 import './Component/generally/responsive/responsive.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -19,6 +21,8 @@ function App() {
         <Route exact path='/AdInsert' element={<AdInsert />} />
         <Route exact path='/Register' element={<Register />} />
         <Route exact path='/SignIn' element={<SignIn />} />
+        <Route exact path='/Blog' element={<Article />} />
+        <Route exact path='/Contact-us' element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
