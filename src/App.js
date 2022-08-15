@@ -8,6 +8,8 @@ import AdInsert from './Component/adInsert/js/AdInsert';
 import SignIn from './Component/register/js/SignIn';
 import Article from "./articles/js/Article";
 import Contact from "./contactUs/js/Contact";
+import ArticlePage from "./articles/js/ArticlePage";
+import AdList from "./Component/advertising/js/AdList";
 import './Component/generally/responsive/responsive.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,13 +18,15 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<MainPage />} />
-        <Route exact path='/Advertising' element={<Advertising />} />
-        <Route exact path='/Profile' element={<Profile />} />
-        <Route exact path='/AdInsert' element={<AdInsert />} />
-        <Route exact path='/Register' element={<Register />} />
-        <Route exact path='/SignIn' element={<SignIn />} />
-        <Route exact path='/Blog' element={<Article />} />
-        <Route exact path='/Contact-us' element={<Contact />} />
+        <Route path='/Advertising' element={<Advertising />} />
+        <Route path='/Profile' element={<Profile />} />
+        <Route path='/AdInsert' element={<AdInsert />} />
+        <Route path='/Register' element={<Register />} />
+        <Route path='/SignIn' element={<SignIn />} />
+        <Route path='/Blog' element={<Article />} />
+        <Route path='/Contact-us' element={<Contact />} />
+        <Route path='/ArticlePage' element={<ArticlePage />} />
+        <Route path='/AdList' element={<AdList />} />
       </Routes>
     </BrowserRouter>
   );

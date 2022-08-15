@@ -393,3 +393,33 @@
         }
     }
 }
+.adList{
+    .input-range {
+        height: 1rem;
+        position: relative;
+        width: 100%;
+        // &__track {
+        //     background: #e6e9ea;
+        //     border-radius: 3px;
+        //     cursor: pointer;
+        //     display: block;
+        //     height: 3px;
+        //     position: relative;
+        //     transition: left 200ms ease-out, width 200ms ease-out;
+        //     will-change: left, width;
+        //     &--active {
+        //         background: #9b26b6;
+        //     }
+        //     &--background {
+        //         margin-top: -1.5px;
+        //         top: 50%;
+        //         position: absolute;
+        //         left: 0;
+        //         right: 0;
+        //     }
+        // }
+        // &__label-container {
+        //     display: none;
+        // }
+    }
+}

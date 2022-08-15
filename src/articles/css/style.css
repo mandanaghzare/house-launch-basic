@@ -32,7 +32,14 @@
   font-weight: 500;
 }
 .article .article_list .article_item #__context {
+  padding-bottom: 0.5rem;
+  overflow: hidden;
   font-size: 0.9em;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .article .article_list .article_item button {
   font-size: 0.9em;
@@ -41,4 +48,95 @@
   margin-top: 1rem;
   border-radius: 2em;
   color: #E1E7DB;
+  transition: 0.3s ease;
+}
+.article .article_list .article_item button:hover {
+  background-color: #4b3e5a;
+}
+.article .pagination {
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+}
+.article .pagination li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #625076;
+  margin: 0 0.5rem;
+  transition: 0.3s ease;
+}
+.article .pagination li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.article .pagination li.pagination__link--active {
+  background-color: #625076;
+  color: #E1E7DB;
+}
+
+.articlePage {
+  padding: 5rem 0;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 3px solid #625076;
+}
+.articlePage #_image {
+  width: 100%;
+}
+.articlePage #_image img {
+  width: 100%;
+}
+.articlePage #_title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.articlePage #_content p {
+  margin: 2rem 0;
+}
+
+.related_article {
+  padding: 5rem 0;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.related_article p {
+  font-size: large;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.related_article #_list {
+  display: flex;
+  justify-content: space-between;
+}
+.related_article #_list #__item {
+  height: 20rem;
+  position: relative;
+  width: 30%;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.related_article #_list #__item #___image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.related_article #_list #__item #___image img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.related_article #_list #__item #___title {
+  position: absolute;
+  bottom: 0;
+  padding: 0.7rem;
+  text-align: center;
+  color: #E1E7DB;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

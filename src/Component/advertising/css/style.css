@@ -385,4 +385,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.adList .input-range {
+  height: 1rem;
+  position: relative;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,1 +1,69 @@
-/*# sourceMappingURL=style.css.map */
+.contact_us {
+  width: 50%;
+  position: relative;
+  margin: 5rem auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 10rem;
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contact_us #_share_opinion {
+  position: absolute;
+  right: -20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #625076;
+  padding: 3rem;
+  height: 85%;
+  width: 45%;
+  overflow: hidden;
+  color: #d6d3d1;
+  border-radius: 0.8rem;
+}
+.contact_us #_share_opinion label {
+  font-size: small;
+}
+.contact_us #_share_opinion input {
+  border-radius: 0.6em;
+  padding: 0.4em;
+  background-color: #d9d1e5;
+}
+.contact_us #_share_opinion textarea {
+  border-radius: 0.6em;
+  padding: 0.4em;
+  background-color: #d9d1e5;
+  resize: none;
+}
+.contact_us #_social_media {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: space-between;
+}
+.contact_us #_social_media #__item {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+.contact_us #_social_media #__item #___image {
+  width: 50%;
+  height: 70%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.contact_us #_social_media #__item #___image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.contact_us #_social_media #__item span {
+  font-size: small;
+}/*# sourceMappingURL=style.css.map */
