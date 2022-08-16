@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
 import { usePosition } from 'use-position';
 import 'leaflet/dist/leaflet.css';
@@ -6,8 +6,8 @@ import './leaflet/geosearch.css';
 import teslaData from "./data/tesla-site.json";
 import { OpenStreetMapProvider } from "react-leaflet-geosearch";
 import SearchControl from "./SearchControl";
+import { useGeolocated } from "react-geolocated";
 
-import { LatLng } from "leaflet";
 
 import L from "leaflet";
 
@@ -21,21 +21,23 @@ L.Icon.Default.mergeOptions({
 
 function NeshanMap(props) {
   const prov = OpenStreetMapProvider();
-  const watch = true;
-  const {
-    latitude,
-    longitude,
-    speed,
-    timestamp,
-    accuracy,
-    heading,
-    error,
-  } = usePosition(watch);
-  console.log(usePosition.u)
   
-  return (
-    <div className="">
-      <MapContainer center={[35.699722, 51.337222]} zoom={13} scrollWheelZoom={true}>
+  const { coords, isGeolocationAvailable, isGeolocationEnabled } =
+  useGeolocated({
+    positionOptions: {
+      enableHighAccuracy: true,
+    },
+    userDecisionTimeout: 5000,
+  });
+
+  console.log(coords)
+  return !isGeolocationAvailable ? (
+    <div>مرورگر شما از موقعیت جغرافیایی پشتیبانی نمی کند</div>
+    ) : !isGeolocationEnabled ? (
+        <div>موقعیت جغرافیایی فعال نیست</div>
+    ) : coords ? (    
+      <div className="">
+      <MapContainer center={[coords.latitude, coords.longitude]} zoom={15} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -63,9 +65,10 @@ function NeshanMap(props) {
           keepResult={false}
         />
       </MapContainer>
-
     </div>
-  );
+    ) : (
+        <div>در حال دریافت اطلاعات مکان&hellip; </div>
+    );
 }
 
 export default NeshanMap;

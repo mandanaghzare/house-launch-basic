@@ -387,8 +387,124 @@
   justify-content: center;
 }
 
+.adList {
+  width: 90%;
+  position: relative;
+  margin: 3rem auto;
+}
+.adList #_search {
+  width: 100%;
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.adList #_search input {
+  width: 95%;
+  padding: 1rem;
+  background-color: #E8E5EB;
+  outline: none;
+  border-radius: 0 1em 1em 0;
+}
+.adList #_search button {
+  background-color: #C9C3CF;
+  border-radius: 0.5em 0 0 0.5em;
+  height: 100%;
+  width: 5%;
+  padding: 1rem;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adList #_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.adList #_list .advItem {
+  width: 30%;
+}
 .adList .input-range {
   height: 1rem;
   position: relative;
   width: 100%;
+  direction: ltr;
+}
+.adList .input-range__track {
+  background: #e6e9ea;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: left 200ms ease-out, width 200ms ease-out;
+  will-change: left, width;
+}
+.adList .input-range__track--active {
+  background: #9b26b6;
+}
+.adList .input-range__track--background {
+  margin-top: -1.5px;
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.adList .input-range__label-container {
+  display: none;
+}
+.adList .input-range__slider {
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  margin-left: -1rem;
+  margin-top: -1rem;
+  outline: none;
+  position: absolute;
+  top: -1px;
+  transition: left 200ms ease-out;
+  will-change: left;
+}
+.adList .input-range__slider::before {
+  background: #ffffff;
+  border-radius: 100%;
+  display: block;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+  will-change: transform, box-shadow;
+  border: 2px solid #9b26b6;
+}
+.adList .renge_result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #8f23b3;
+  direction: ltr;
+}
+.adList .filters {
+  padding: 2rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+}
+.adList .filters h6 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.adList .filters .renge_filter {
+  margin-bottom: 2.5rem;
+}
+.adList .filters .renge_filter p {
+  margin-bottom: 0.5rem;
+}
+.adList .react-tabs__tab-list {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */

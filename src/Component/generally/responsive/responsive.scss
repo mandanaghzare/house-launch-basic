@@ -22,6 +22,12 @@
             width: 50%;
         }
     }
+    .contact_us {
+        width: 60%;
+    }
+    .adList #_search button{
+        width: 10%;
+    }
 }
 @media only screen and (max-width: 1199.98px) {
     .advertising #_file_content #_assignation, .advertising #gallery #_two_small_img{
@@ -52,6 +58,22 @@
         label, .items{
             width: 30%;
         }
+    }
+    .header .menu a {
+        padding: 0 2rem;
+    }
+    .related_article #_list #__item{
+        height: 13rem;
+        font-size: .8em;
+    }
+    .contact_us{
+        padding: 5rem;
+        #_share_opinion{
+            width: 50%;
+        }
+    }
+    .adList #_list .advItem {
+        width: 48%;
     }
 }
 @media only screen and (max-width: 990.98px) {
@@ -142,6 +164,60 @@
             width: 100%;
         }
     }
+    .article .article_list .article_item{
+        width: 48%;
+    }
+    .header .menu a {
+        padding: 0 1.5rem;
+        font-size: .8em;
+    }
+    .contact_us{
+        flex-direction: column;
+        box-shadow: none;
+        width: 75%;
+        padding: 0;
+        #_share_opinion{
+            width: 100%;
+            position: relative;
+            right: unset;
+            &>div{
+                margin-top: 2rem;
+            }
+        }
+        #_social_media{
+            width: 100%;
+            max-width: unset;
+            #__item {
+                width: 24%;
+            }
+        }
+    }
+    .adList{
+        margin-bottom: 0;
+        width: 100%;
+        .row{
+            height: max-content;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+            .col-lg-9{
+                padding: 0;
+                width: 90%;
+                margin: 0 auto;
+            }
+            .col-lg-3{
+                padding: 0;
+                background-color: #fafaf9;
+                border: 2px solid #625076;
+                border-radius: 15%;
+                position: absolute;
+                bottom: -53%;
+                .adList .filters{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 767.98px) {
     .header{
@@ -155,9 +231,13 @@
             a{
                 padding-left: 2rem;
                 padding-right: 0;
-                font-size: .9em;
+                font-size: .7em;
             }
         } 
+    }
+    .related_article #_list #__item {
+        height: 9rem;
+        font-size: 0.6em;
     }
     .adInsert #_adInsert_content{
         font-size: .8em;
@@ -172,6 +252,14 @@
             }
         } 
     } 
+    .related_article #_list #__item #___title span{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        word-wrap: break-word;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
     .profile{
         flex-direction: column;
         .tablist{
@@ -253,6 +341,53 @@
     .adInsert #_adInsert_content{
         padding-top: 2rem;
     }
+    .article{
+        .article_list .article_item{
+            width: 100%;
+        }
+        .content {
+            padding: 5rem 1rem;
+        }
+    } 
+    .contact_us{
+        min-height: unset;
+        margin: 3rem auto;
+        #_share_opinion{
+            padding: 1rem;
+        }
+        #_social_media #__item span{
+            display: none;
+        }
+
+    } 
+    .articlePage {
+        padding: 1rem 0;
+        #_title{
+            flex-direction: column;
+            #__date{
+                font-size: .6em;
+            }
+        }
+        #_content{
+            p{
+                font-size: .8em;
+                text-align: justify;
+            }
+        } 
+    }
+    .related_article #_list{
+        flex-direction: column;
+        #__item{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+    .article .pagination li {
+        width: 25px;
+        height: 25px;
+        font-size: .5em;
+        margin: 0 0.3rem;
+    }
     .header{
         position: fixed;
         bottom: 0;
@@ -271,7 +406,7 @@
             width: 100%;
             a{
                 color: #1c1917;
-                margin: 0 1rem;
+                margin: 0 .5rem;
                 display: flex;
                 align-items: center;
                 padding-left: 0;

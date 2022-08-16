@@ -5,6 +5,7 @@
   overflow: hidden;
   margin-bottom: 2rem;
   position: relative;
+  display: block;
   cursor: pointer;
 }
 .advItem #_image {

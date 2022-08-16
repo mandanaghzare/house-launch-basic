@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path='/' element={<MainPage />} />
+        <Route path='/' element={<MainPage />} />
         <Route path='/Advertising' element={<Advertising />} />
         <Route path='/Profile' element={<Profile />} />
         <Route path='/AdInsert' element={<AdInsert />} />

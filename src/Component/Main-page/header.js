@@ -31,7 +31,7 @@ const Header = (props) => {
                     <img src={require('../../Img/logo.png')} alt="logo" />
                 </div>
                 <div className="headerItems">
-                    <Link exact to='/Profile'>
+                    <Link exact="true" to='/Profile'>
                         <p>پنل مدیریت</p>
                         <span><MdAdminPanelSettings /></span>
                     </Link>
@@ -39,7 +39,7 @@ const Header = (props) => {
                         <p>درج آگهی</p>
                         <span id="_header_items_adv"><FcAdvertising /></span>
                     </Link>
-                    <Link to='/Advertising'>
+                    <Link to='/AdList'>
                         <p>خرید رهن اجاره</p>
                         <span id="_header_items_adv"><BiBuildingHouse /></span>
                     </Link>

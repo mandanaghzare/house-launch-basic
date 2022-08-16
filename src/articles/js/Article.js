@@ -39,12 +39,15 @@ function Article() {
               previousLabel={"←"}
               nextLabel={"→"}
               pageCount={pageCount}
+              pageRangeDisplayed={0}
+              marginPagesDisplayed={1}
               onPageChange={handlePageClick}
               containerClassName={"pagination"}
               previousLinkClassName={"pagination__link"}
               nextLinkClassName={"pagination__link"}
               disabledClassName={"pagination__link--disabled"}
               activeClassName={"pagination__link--active"}
+              maxWidth={100}
             />
         </div>
     </div>

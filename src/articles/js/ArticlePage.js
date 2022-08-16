@@ -31,19 +31,19 @@ function ArticlePage() {
                     <div id="___image">
                         <img src={require('../../Img/Real-Estate-Career.png')} alt="" />                    
                     </div>
-                    <div id="___title">چرا بانک‌ها از پرداخت تسهیلات سرپیچی می‌کنند؟</div>
+                    <div id="___title"><span>چرا بانک‌ها از پرداخت تسهیلات سرپیچی می‌کنند؟</span></div>
                 </Link>
                 <Link to="/ArticlePage" id="__item">
                     <div id="___image">
                         <img src={require('../../Img/Real-Estate-Career.png')} alt="" />                    
                     </div>
-                    <div id="___title">چرا بانک‌ها از پرداخت تسهیلات سرپیچی می‌کنند؟</div>
+                    <div id="___title"><span>چرا بانک‌ها از پرداخت تسهیلات سرپیچی می‌کنند؟</span></div>
                 </Link>
                 <Link to="/ArticlePage" id="__item">
                     <div id="___image">
                         <img src={require('../../Img/Real-Estate-Career.png')} alt="" />                    
                     </div>
-                    <div id="___title">چرا بانک‌ها از پرداخت تسهیلات سرپیچی می‌کنند؟</div>
+                    <div id="___title"><span>چرا بانک‌ها از پرداخت تسهیلات سرپیچی می‌کنند؟</span></div>
                 </Link>
             </div>
         </div>
