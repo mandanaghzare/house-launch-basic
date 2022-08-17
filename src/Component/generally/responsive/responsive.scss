@@ -204,16 +204,36 @@
                 padding: 0;
                 width: 90%;
                 margin: 0 auto;
+                z-index: 1;
             }
             .col-lg-3{
                 padding: 0;
                 background-color: #fafaf9;
                 border: 2px solid #625076;
-                border-radius: 15%;
-                position: absolute;
-                bottom: -53%;
-                .adList .filters{
+                border-radius: 15% 15% 0 0;
+                position: fixed;
+                right: 0;
+                width: 100%;
+                bottom: -620px;
+                transition: 1s ease all;
+                z-index: 10;
+                .filters{
                     box-shadow: none;
+                    overflow: hidden;
+                    position: relative;
+                    h6{
+                        display: flex;
+                        justify-content: center;
+                        &::before{
+                            content: '';
+                            width: 10%;
+                            height: 3px;
+                            top: 1em;
+                            background-color: #625076;
+                            display: block;
+                            position: absolute;
+                        }
+                    }
                 }
             }
         }
@@ -235,6 +255,9 @@
             }
         } 
     }
+    .adList .row .col-lg-3{
+        bottom: -460px;
+    }
     .related_article #_list #__item {
         height: 9rem;
         font-size: 0.6em;
@@ -252,6 +275,10 @@
             }
         } 
     } 
+    .adList .filters .renge_filter {
+        margin-bottom: 0.5rem;
+        font-size: .8em;
+    }
     .related_article #_list #__item #___title span{
         overflow: hidden;
         text-overflow: ellipsis;
@@ -348,6 +375,22 @@
         .content {
             padding: 5rem 1rem;
         }
+    } 
+    .adList{
+        #_list .advItem{
+            width: 100%;
+        }
+        #_search{
+            input{
+                padding: 0.5rem;
+                font-size: .7em;
+            }
+            button{
+                width: 15%;
+                padding: 0.5rem;
+                font-size: 1em;
+            }
+        } 
     } 
     .contact_us{
         min-height: unset;

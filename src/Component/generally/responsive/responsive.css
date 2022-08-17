@@ -196,17 +196,37 @@
     padding: 0;
     width: 90%;
     margin: 0 auto;
+    z-index: 1;
   }
   .adList .row .col-lg-3 {
     padding: 0;
     background-color: #fafaf9;
     border: 2px solid #625076;
-    border-radius: 15%;
-    position: absolute;
-    bottom: -53%;
+    border-radius: 15% 15% 0 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    bottom: -620px;
+    transition: 1s ease all;
+    z-index: 10;
   }
-  .adList .row .col-lg-3 .adList .filters {
+  .adList .row .col-lg-3 .filters {
     box-shadow: none;
+    overflow: hidden;
+    position: relative;
+  }
+  .adList .row .col-lg-3 .filters h6 {
+    display: flex;
+    justify-content: center;
+  }
+  .adList .row .col-lg-3 .filters h6::before {
+    content: "";
+    width: 10%;
+    height: 3px;
+    top: 1em;
+    background-color: #625076;
+    display: block;
+    position: absolute;
   }
 }
 @media only screen and (max-width: 767.98px) {
@@ -225,6 +245,9 @@
     padding-right: 0;
     font-size: 0.7em;
   }
+  .adList .row .col-lg-3 {
+    bottom: -460px;
+  }
   .related_article #_list #__item {
     height: 9rem;
     font-size: 0.6em;
@@ -239,6 +262,10 @@
     width: 100%;
     font-size: 0.8em;
     margin-bottom: 0.5rem;
+  }
+  .adList .filters .renge_filter {
+    margin-bottom: 0.5rem;
+    font-size: 0.8em;
   }
   .related_article #_list #__item #___title span {
     overflow: hidden;
@@ -334,6 +361,18 @@
   }
   .article .content {
     padding: 5rem 1rem;
+  }
+  .adList #_list .advItem {
+    width: 100%;
+  }
+  .adList #_search input {
+    padding: 0.5rem;
+    font-size: 0.7em;
+  }
+  .adList #_search button {
+    width: 15%;
+    padding: 0.5rem;
+    font-size: 1em;
   }
   .contact_us {
     min-height: unset;
