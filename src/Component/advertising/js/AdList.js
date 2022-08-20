@@ -7,6 +7,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import DragMove from "./DragMove";
 import 'react-tabs/style/react-tabs.css';
 import '../css/style.css';
+import Footer from '../../generally/footer/js/Footer';
 
 function AdList() {
     const [priceVal, setPriceVal] = React.useState({ min: 1, max: 100 });
@@ -20,7 +21,7 @@ function AdList() {
     const handleDragMove = (e) => {
         translate.y >= -1 ? 
         setTranslate({
-            y: -600 
+            y: -450 
         })
         : setTranslate({
             y: 0 
@@ -371,6 +372,7 @@ function AdList() {
                     }
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

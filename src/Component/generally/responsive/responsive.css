@@ -71,6 +71,23 @@
   .adList #_list .advItem {
     width: 48%;
   }
+  .footer--trust img {
+    width: 30%;
+  }
+  header .headerContent .headerItems a {
+    padding: 12px;
+  }
+  header .headerContent .headerItems a span {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .footer--trust {
+    order: 3;
+  }
+  .footer--trust img {
+    width: 15%;
+  }
 }
 @media only screen and (max-width: 990.98px) {
   .advertising #gallery {
@@ -139,12 +156,22 @@
   .profile .tablist .name {
     font-size: 1em;
   }
+  header.goBot .headerItems a {
+    transform: translateX(-100%);
+  }
   header .headerContent {
     width: 60%;
   }
   header .headerContent .headerItems a {
     font-size: small;
-    padding: 5px 10px;
+    padding: 15px 10px;
+  }
+  header .menu a {
+    padding: 0 1.5rem;
+    font-size: 0.8em;
+  }
+  .leaflet-container .leaflet-control-geosearch a {
+    width: 10% !important;
   }
   .profile .tabContent .panel {
     flex-direction: column;
@@ -154,10 +181,6 @@
   }
   .article .article_list .article_item {
     width: 48%;
-  }
-  .header .menu a {
-    padding: 0 1.5rem;
-    font-size: 0.8em;
   }
   .contact_us {
     flex-direction: column;
@@ -355,6 +378,23 @@
 @media only screen and (max-width: 575.98px) {
   .adInsert #_adInsert_content {
     padding-top: 2rem;
+  }
+  .footer {
+    padding: 2rem 1rem;
+    font-size: 0.7em;
+  }
+  .footer--trust {
+    order: 3;
+  }
+  .footer--trust img {
+    width: 30%;
+  }
+  .footer--newsLetter input {
+    width: 100%;
+  }
+  .footer--social_media li {
+    width: 25%;
+    text-align: center;
   }
   .article .article_list .article_item {
     width: 100%;
